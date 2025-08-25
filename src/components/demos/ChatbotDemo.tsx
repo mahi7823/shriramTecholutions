@@ -29,13 +29,13 @@ export default function ChatbotDemo() {
 
   return (
     <div className="space-y-4">
-      <div className="h-64 border border-gray-200 rounded-lg p-4 overflow-y-auto bg-gray-50">
+      <div className="h-64 border border-gray-200 dark:border-gray-600 rounded-lg p-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         {chatMessages.map((msg, idx) => (
           <div key={idx} className={`mb-3 ${msg.type === 'user' ? 'text-right' : 'text-left'}`}>
             <div className={`inline-block p-3 rounded-lg max-w-[80%] ${
               msg.type === 'user' 
                 ? 'bg-blue-500 text-white' 
-                : 'bg-white text-gray-800 border'
+                : 'bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-600'
             }`}>
               {msg.message}
             </div>
@@ -48,7 +48,7 @@ export default function ChatbotDemo() {
           value={userMessage}
           onChange={(e) => setUserMessage(e.target.value)}
           placeholder="Type your message..."
-          className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex-1 p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
           onKeyPress={(e) => e.key === 'Enter' && handleChatSend()}
         />
         <button

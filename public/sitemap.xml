@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.shritech.digital</loc>
+    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  
+  <!-- About Us Page -->
+  <url>
+    <loc>https://www.shritech.digital/about</loc>
+    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  
+  <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://www.shritech.digital/privacy</loc>
+    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  
+  <!-- Services Section (anchor links) -->
+  <url>
+    <loc>https://www.shritech.digital/#services</loc>
+    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  
+  <!-- Case Studies Section -->
+  <url>
+    <loc>https://www.shritech.digital/#case-studies</loc>
+    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://www.shritech.digital/#contact</loc>
+    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+</urlset>

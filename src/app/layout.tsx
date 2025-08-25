@@ -1,17 +1,35 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import GoogleAnalytics from '@/components/common/GoogleAnalytics'
+import SchemaMarkup from '@/components/common/SchemaMarkup'
+import FAQSchema from '@/components/common/FAQSchema'
+import LocalBusinessSchema from '@/components/common/LocalBusinessSchema'
+import { ThemeProvider } from '@/contexts/ThemeContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://shriramtech.com'),
+  metadataBase: new URL('https://www.shritech.digital'),
   title: {
-    default: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert',
-    template: '%s | Shriram Tech Solutions'
+    default: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert | 5+ Years Experience',
+    template: '%s | Shriram Tech Solutions - AI/ML Expert'
   },
-  description: 'Professional AI/ML Developer with 5+ years experience. WhatsApp Business API, FastAPI, Next.js, Python solutions. Proven results: 300% order increases, 95% accuracy rates.',
-  keywords: ['AI developer', 'ML developer', 'WhatsApp Business API', 'FastAPI', 'Next.js', 'Python', 'chatbot development', 'document processing', 'computer vision', 'predictive analytics'],
+  description: 'Professional AI/ML Developer with 5+ years experience in India. WhatsApp Business API specialist, FastAPI, Next.js, Python solutions. Proven results: 300% order increases, 95% accuracy rates. Contact: myadav8890@outlook.com | +91-7433000131',
+  keywords: [
+    // Primary keywords
+    'AI developer India', 'ML developer India', 'WhatsApp Business API expert India', 'AI consultant India',
+    // Technology keywords
+    'FastAPI developer', 'Next.js developer', 'Python AI developer', 'React developer', 'TypeScript developer',
+    // Service keywords  
+    'chatbot development India', 'document processing AI', 'computer vision solutions', 'predictive analytics',
+    'business intelligence dashboard', 'machine learning automation', 'AI customer support',
+    // Location keywords
+    'AI developer Delhi', 'ML consultant Mumbai', 'WhatsApp API developer Bangalore', 'AI solutions India',
+    // Business keywords
+    'AI for restaurants', 'AI for ecommerce', 'AI for law firms', 'business automation AI',
+    'cost reduction AI', 'revenue increase AI', 'productivity improvement AI'
+  ],
   authors: [{ name: 'Shriram Tech Solutions' }],
   creator: 'Shriram Tech Solutions',
   publisher: 'Shriram Tech Solutions',
@@ -29,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://shriramtech.com',
+    url: 'https://www.shritech.digital',
     siteName: 'Shriram Tech Solutions',
     title: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert',
     description: 'Professional AI/ML Developer with 5+ years experience. WhatsApp Business API, FastAPI, Next.js, Python solutions.',
@@ -61,7 +79,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <ThemeProvider>
+          <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"} />
+          <SchemaMarkup />
+          <FAQSchema />
+          <LocalBusinessSchema />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

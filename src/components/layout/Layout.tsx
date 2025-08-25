@@ -38,7 +38,7 @@ export default function Layout({ children, title, description }: LayoutProps) {
   return (
     <ErrorBoundary>
       <SEOHead title={title} description={description} />
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
         <Navigation />
         <main>{children}</main>
         <Footer />
