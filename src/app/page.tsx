@@ -7,15 +7,7 @@ import ServicesList from '@/components/services/ServicesList';
 import CaseStudiesList from '@/components/case-studies/CaseStudiesList';
 import ContactSection from '@/components/contact/ContactSection';
 import { DemoModal, ChatbotDemo, DocumentDemo, PredictionDemo, VisionDemo } from '@/components/demos';
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VX6E48516H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-VX6E48516H');
-</script>
 
 export default function HomePage() {
   const [activeDemo, setActiveDemo] = useState<string | null>(null);
