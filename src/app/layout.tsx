@@ -78,15 +78,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VX6E48516H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VX6E48516H');
-</script>
+     
       <body className={inter.className}>
         <ThemeProvider>
           <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"} />
