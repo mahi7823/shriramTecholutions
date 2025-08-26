@@ -1,0 +1,113 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Background Pattern -->
+  <pattern id="dots" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+    <circle cx="25" cy="25" r="2" fill="rgba(255,255,255,0.1)"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  
+  <!-- Logo/Icon Area -->
+  <g transform="translate(100, 150)">
+    <!-- Tech Icon Background -->
+    <rect x="0" y="0" width="80" height="80" rx="20" fill="rgba(255,255,255,0.1)" filter="url(#glow)"/>
+    <rect x="5" y="5" width="70" height="70" rx="15" fill="url(#textGradient)"/>
+    
+    <!-- Brain/AI Icon -->
+    <g transform="translate(40, 40)" fill="white">
+      <path d="M-15,-10 C-20,-15 -15,-20 -10,-18 C-5,-22 5,-22 10,-18 C15,-20 20,-15 15,-10 C18,-5 18,5 15,10 C20,15 15,20 10,18 C5,22 -5,22 -10,18 C-15,20 -20,15 -15,10 C-18,5 -18,-5 -15,-10 Z"/>
+      <circle cx="-8" cy="-3" r="2" fill="#1e40af"/>
+      <circle cx="8" cy="-3" r="2" fill="#1e40af"/>
+      <path d="M-6,3 Q0,8 6,3" stroke="#1e40af" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Lightning bolt -->
+    <g transform="translate(65, 25)" fill="#fbbf24">
+      <path d="M0,0 L8,0 L3,10 L6,10 L-2,20 L2,12 L-1,12 Z"/>
+    </g>
+  </g>
+  
+  <!-- Main Title -->
+  <text x="220" y="220" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">
+    Shriram Tech Solutions
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="220" y="270" font-family="Arial, sans-serif" font-size="28" fill="url(#textGradient)">
+    AI/ML Developer &amp; WhatsApp Business API Expert
+  </text>
+  
+  <!-- Experience Badge -->
+  <g transform="translate(220, 300)">
+    <rect x="0" y="0" width="180" height="40" rx="20" fill="rgba(255,255,255,0.15)"/>
+    <text x="90" y="28" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">
+      5+ Years Experience
+    </text>
+  </g>
+  
+  <!-- Services -->
+  <g transform="translate(220, 370)" fill="rgba(255,255,255,0.9)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Services:</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="18">• WhatsApp Business API Integration</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="18">• AI/ML Development &amp; Automation</text>
+    <text x="0" y="95" font-family="Arial, sans-serif" font-size="18">• FastAPI, Next.js, Python Solutions</text>
+  </g>
+  
+  <!-- Contact Info -->
+  <g transform="translate(780, 400)" fill="rgba(255,255,255,0.8)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16">📱 +91 7433000131</text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="16">🌐 www.shritech.digital</text>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="16">✉️ contact@shriramtech.com</text>
+  </g>
+  
+  <!-- Results Banner -->
+  <g transform="translate(780, 150)">
+    <rect x="0" y="0" width="320" height="120" rx="15" fill="rgba(0,0,0,0.2)"/>
+    <rect x="5" y="5" width="310" height="110" rx="12" fill="rgba(255,255,255,0.1)"/>
+    
+    <text x="155" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      Proven Results
+    </text>
+    
+    <g transform="translate(20, 50)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#60f568">300% Order Increases</text>
+      <text x="0" y="25" font-family="Arial, sans-serif" font-size="14" fill="#60f568">95% Accuracy Rates</text>
+      <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" fill="#60f568">24/7 AI Support</text>
+    </g>
+    
+    <g transform="translate(170, 50)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#fbbf24">Cost Reduction 70%</text>
+      <text x="0" y="25" font-family="Arial, sans-serif" font-size="14" fill="#fbbf24">ROI in 2 Weeks</text>
+      <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" fill="#fbbf24">100% Satisfaction</text>
+    </g>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g opacity="0.3">
+    <circle cx="150" cy="500" r="3" fill="white"/>
+    <circle cx="300" cy="550" r="2" fill="white"/>
+    <circle cx="500" cy="580" r="4" fill="white"/>
+    <circle cx="800" cy="520" r="2" fill="white"/>
+    <circle cx="950" cy="570" r="3" fill="white"/>
+    <circle cx="1100" cy="540" r="2" fill="white"/>
+  </g>
+</svg>

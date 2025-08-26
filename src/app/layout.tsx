@@ -5,6 +5,7 @@ import GoogleAnalytics from '@/components/common/GoogleAnalytics'
 import SchemaMarkup from '@/components/common/SchemaMarkup'
 import FAQSchema from '@/components/common/FAQSchema'
 import LocalBusinessSchema from '@/components/common/LocalBusinessSchema'
+import EnhancedSEO from '@/components/common/EnhancedSEO'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -53,10 +54,11 @@ export const metadata: Metadata = {
     description: 'Professional AI/ML Developer with 5+ years experience. WhatsApp Business API, FastAPI, Next.js, Python solutions.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Shriram Tech Solutions - AI/ML Developer Portfolio',
+        type: 'image/svg+xml',
       },
     ],
   },
@@ -64,10 +66,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert',
     description: 'Professional AI/ML Developer with 5+ years experience. WhatsApp Business API, FastAPI, Next.js, Python solutions.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.svg'],
   },
   verification: {
-    google: 'verification-token', // Add your actual Google verification token
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || 'ZayAh0RA-19RpBttk3oDglvibUIlI3sdqdp-oBOzLwQ',
   },
 }
 
@@ -78,10 +80,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-     
+      <head>
+        <EnhancedSEO />
+      </head>
       <body className={inter.className}>
         <ThemeProvider>
-          <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"} />
+          <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_ID || "G-EJBKR606DM"} />
           <SchemaMarkup />
           <FAQSchema />
           <LocalBusinessSchema />

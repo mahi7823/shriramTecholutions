@@ -1,0 +1,6 @@
+<!-- This is a placeholder. Convert og-image.svg to JPG format for production -->
+<!-- Recommended tools: -->
+<!-- 1. ImageMagick: convert og-image.svg og-image.jpg -->
+<!-- 2. Online converter: https://cloudconvert.com/svg-to-jpg -->
+<!-- 3. Photoshop/GIMP: Open SVG and export as JPG -->
+<!-- 4. Or use the SVG directly by updating layout.tsx to use og-image.svg -->
