@@ -10,7 +10,7 @@ interface SEOHeadProps {
 export default function SEOHead({
   title = "Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert",
   description = "Professional AI/ML Developer with 5+ years experience. WhatsApp Business API, FastAPI, Next.js, Python solutions. Proven results: 300% order increases, 95% accuracy rates.",
-  canonical = "https://shriramtech.com",
+  canonical = "https://shritech.digital",
   ogImage = "/og-image.jpg"
 }: SEOHeadProps) {
   const fullTitle = title.includes("Shriram Tech") ? title : `${title} | Shriram Tech Solutions`;
@@ -53,7 +53,7 @@ export default function SEOHead({
             "description": description,
             "url": canonical,
             "telephone": "+91-7433000131",
-            "email": "contact@shriramtech.com",
+            "email": "contact@shritech.digital",
             "areaServed": "India",
             "serviceType": [
               "AI Development",

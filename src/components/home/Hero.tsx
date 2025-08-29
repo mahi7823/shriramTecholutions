@@ -7,99 +7,86 @@ interface HeroProps {
 
 export default function Hero({ stats }: HeroProps) {
   return (
-    <section id="home" className="relative pt-16 min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-200">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5 dark:opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 50% 50%, #3B82F6 1px, transparent 1px)',
-          backgroundSize: '20px 20px'
-        }}></div>
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background with subtle particles */}
+      <div className="absolute inset-0">
+        <div className="particles">
+          {[...Array(5)].map((_, i) => (
+            <div
+              key={i}
+              className="particle"
+              style={{
+                width: '3px',
+                height: '3px',
+                left: `${15 + i * 20}%`,
+                top: `${25 + i * 12}%`,
+                animationDelay: `${i * 1.2}s`,
+              }}
+            />
+          ))}
+        </div>
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex items-center min-h-screen">
-        <div className="text-center w-full">
-          <div className="mb-6">
-            <span className="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium mb-4">
-              🚀 AI-Powered Business Solutions
-            </span>
+      <div className="container">
+        <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
+          {/* Left Side - Value Proposition */}
+          <div className="animate-fade-in-left animate-stagger-1">
+            <h1 className="mb-6 text-[var(--color-text-primary)]">
+              Transform Your Business with AI & Technology
+            </h1>
+            
+            <p className="mb-8 text-lg">
+              We build intelligent chatbots, AI agents, and modern web solutions that drive measurable results for your business.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <a href="#contact" className="btn btn-primary btn-lg">
+                Get Free Consultation
+                <ArrowRight size={20} />
+              </a>
+              <a href="#services" className="btn btn-secondary btn-lg">
+                Explore Solutions
+              </a>
+            </div>
           </div>
-          
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">Shriram Tech</span>
-            <br className="hidden sm:block" />
-            <span className="text-4xl md:text-6xl">Solutions</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4 max-w-4xl mx-auto leading-relaxed">
-            Professional AI/ML Developer specializing in
-            <br className="hidden sm:block" />
-            <span className="font-semibold text-blue-600 dark:text-blue-400">WhatsApp Business API</span> • 
-            <span className="font-semibold text-green-600 dark:text-green-400">FastAPI</span> • 
-            <span className="font-semibold text-purple-600 dark:text-purple-400">Next.js</span> • 
-            <span className="font-semibold text-orange-600 dark:text-orange-400">Python</span>
-          </p>
-          
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 font-medium">
-            5+ Years Experience • Don't just read about capabilities - 
-            <span className="text-blue-600 dark:text-blue-400 font-semibold">experience them yourself!</span>
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
-            <a
-              href="#services"
-              className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            >
-              Try Live Demos 
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href="https://wa.me/917433000131?text=Hi! I want to discuss WhatsApp Business API integration for my business."
-              className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            >
-              <MessageCircle className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
-              WhatsApp Business API
-            </a>
+
+          {/* Right Side - Simple animated illustration */}
+          <div className="hidden lg:flex items-center justify-center animate-fade-in-right animate-stagger-2">
+            <div className="relative w-80 h-80 flex items-center justify-center">
+              {/* Central element */}
+              <div className="w-32 h-32 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-3xl flex items-center justify-center animate-float shadow-2xl">
+                <MessageCircle size={48} className="text-white" />
+              </div>
+              
+              {/* Floating elements */}
+              <div className="absolute top-8 left-8 w-4 h-4 bg-cyan-400 rounded-full animate-float animation-delay-300"></div>
+              <div className="absolute top-16 right-12 w-3 h-3 bg-blue-400 rounded-full animate-float animation-delay-150"></div>
+              <div className="absolute bottom-12 left-16 w-5 h-5 bg-purple-400 rounded-full animate-float animation-delay-450"></div>
+              <div className="absolute bottom-8 right-8 w-3 h-3 bg-green-400 rounded-full animate-float"></div>
+            </div>
           </div>
-          
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            ⚡ Get instant quote • 💬 Free consultation • 🚀 Fast deployment
-          </p>
         </div>
+          
         
-        {/* Stats */}
-        <div className="mt-20">
-          <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 text-center mb-12">
-            Real Impact, Real Results
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <StatItem
-              value={`${stats.orders}+`}
-              label="Daily Orders"
-              color="text-blue-600 dark:text-blue-400"
-              bgColor="bg-blue-50 dark:bg-blue-900/20"
-              borderColor="border-blue-200 dark:border-blue-800"
-            />
-            <StatItem
-              value={`₹${(stats.revenue / 100000).toFixed(0)}L+`}
-              label="Revenue Generated"
-              color="text-green-600 dark:text-green-400"
-              bgColor="bg-green-50 dark:bg-green-900/20"
-              borderColor="border-green-200 dark:border-green-800"
-            />
-            <StatItem
-              value={`${stats.efficiency}%`}
-              label="Accuracy Rate"
-              color="text-purple-600 dark:text-purple-400"
-              bgColor="bg-purple-50 dark:bg-purple-900/20"
-              borderColor="border-purple-200 dark:border-purple-800"
-            />
-            <StatItem
-              value="24/7"
-              label="AI Support"
-              color="text-orange-600 dark:text-orange-400"
-              bgColor="bg-orange-50 dark:bg-orange-900/20"
-              borderColor="border-orange-200 dark:border-orange-800"
-            />
+        {/* Stats Section */}
+        <div className="mt-16">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="card card-sm text-center animate-scale-in animate-stagger-1">
+              <div className="text-2xl md:text-3xl font-bold text-blue-400 mb-2 counter-animation">{stats.orders}+</div>
+              <div className="text-sm">Daily Orders</div>
+            </div>
+            <div className="card card-sm text-center animate-scale-in animate-stagger-2">
+              <div className="text-2xl md:text-3xl font-bold text-cyan-400 mb-2 counter-animation">₹{(stats.revenue / 100000).toFixed(0)}L+</div>
+              <div className="text-sm">Revenue Generated</div>
+            </div>
+            <div className="card card-sm text-center animate-scale-in animate-stagger-3">
+              <div className="text-2xl md:text-3xl font-bold text-purple-400 mb-2 counter-animation">{stats.efficiency}%</div>
+              <div className="text-sm">Success Rate</div>
+            </div>
+            <div className="card card-sm text-center animate-scale-in animate-stagger-4">
+              <div className="text-2xl md:text-3xl font-bold text-green-400 mb-2">24/7</div>
+              <div className="text-sm">AI Support</div>
+            </div>
           </div>
         </div>
       </div>
@@ -107,19 +94,3 @@ export default function Hero({ stats }: HeroProps) {
   );
 }
 
-interface StatItemProps {
-  value: string;
-  label: string;
-  color: string;
-  bgColor: string;
-  borderColor: string;
-}
-
-function StatItem({ value, label, color, bgColor, borderColor }: StatItemProps) {
-  return (
-    <div className={`text-center p-6 rounded-xl border ${bgColor} ${borderColor} hover:shadow-lg transition-all duration-300 transform hover:scale-105`}>
-      <div className={`text-3xl md:text-4xl font-bold ${color} mb-2`}>{value}</div>
-      <div className="text-gray-600 dark:text-gray-400 font-medium">{label}</div>
-    </div>
-  );
-}

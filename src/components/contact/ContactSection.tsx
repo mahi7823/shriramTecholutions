@@ -1,13 +1,15 @@
 import { Clock, Zap, MapPin, Award, MessageCircle, Phone, Mail } from 'lucide-react';
 import ContactCard from './ContactCard';
 import ContactButton from './ContactButton';
+import ContactForm from './ContactForm';
+import { contactInfo as contact, generateWhatsAppLink, generateEmailLink, generatePhoneLink } from '@/config/contactInfo';
 
 export default function ContactSection() {
   const contactCards = [
     {
       icon: Clock,
       title: "Availability",
-      description: ["Evenings 6-11 PM", "Full Weekends"]
+      description: [contact.businessHours.weekdays, "Full Weekends"]
     },
     {
       icon: Zap,
@@ -30,34 +32,37 @@ export default function ContactSection() {
     {
       icon: MessageCircle,
       text: "Chat on WhatsApp",
-      href: "https://wa.me/917433000131?text=Hi Shriram! I'm interested in WhatsApp Business API and AI solutions for my business. Can we discuss the requirements?",
+      href: generateWhatsAppLink(contact.whatsappMessages.consultation),
       bgColor: "bg-green-500",
       hoverColor: "hover:bg-green-600"
     },
     {
       icon: Phone,
-      text: "Call: 7433000131",
-      href: "tel:+917433000131",
+      text: `Call: ${contact.phone.replace('+91-', '')}`,
+      href: generatePhoneLink(),
       bgColor: "bg-blue-500",
       hoverColor: "hover:bg-blue-600"
     },
     {
       icon: Mail,
       text: "Email Us",
-      href: "mailto:contact@shriramtech.com",
+      href: generateEmailLink(),
       bgColor: "bg-purple-500",
       hoverColor: "hover:bg-purple-600"
     }
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-600 to-purple-700 dark:from-blue-800 dark:to-purple-900 text-white transition-colors duration-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20">
+      <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="mb-6">
             Ready to Transform Your Business?
           </h2>
-          <p className="text-lg opacity-90">Get your WhatsApp Business API and AI solutions today</p>
+          
+          <p className="text-lg mb-12">
+            Get your WhatsApp Business API and AI solutions today. Start with a free consultation and see how we can help your business grow.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -66,11 +71,84 @@ export default function ContactSection() {
           ))}
         </div>
 
-        <div className="text-center">
+        {/* Quick Contact Buttons */}
+        <div className="text-center mb-20">
+          <h3 className="mb-6 text-gradient">
+            Get in Touch Instantly
+          </h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {contactButtons.map((button) => (
               <ContactButton key={button.text} {...button} />
             ))}
+          </div>
+        </div>
+
+        {/* Contact Form and Info Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          {/* Contact Form */}
+          <div className="lg:col-span-8">
+            <ContactForm />
+          </div>
+
+          {/* Contact Information */}
+          <div className="lg:col-span-4 space-y-8">
+            <div className="card card-md">
+              <h4 className="mb-4 text-gradient">
+                Why Choose Us?
+              </h4>
+              <div className="space-y-4 text-sm">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-muted leading-relaxed">
+                    <strong className="text-primary">Expert Team:</strong> Certified developers with 5+ years of experience in WhatsApp API and AI solutions.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-muted leading-relaxed">
+                    <strong className="text-primary">Proven Results:</strong> Successfully delivered 200+ projects with 98% client satisfaction rate.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-muted leading-relaxed">
+                    <strong className="text-primary">24/7 Support:</strong> Round-the-clock technical support and maintenance for all solutions.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-muted leading-relaxed">
+                    <strong className="text-primary">Cost Effective:</strong> Competitive pricing with flexible payment options and transparent billing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="card card-md">
+              <h4 className="mb-4 text-gradient">
+                Business Hours
+              </h4>
+              <div className="space-y-3 text-sm">
+                <div className="flex justify-between items-center">
+                  <span className="text-muted">Monday - Friday</span>
+                  <span className="text-primary font-medium">{contact.businessHours.weekdays}</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-muted">Saturday - Sunday</span>
+                  <span className="text-primary font-medium">{contact.businessHours.weekends}</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-muted">Emergency Support</span>
+                  <span className="text-success font-medium">24/7 Available</span>
+                </div>
+                <hr className="border-border my-4" />
+                <div className="text-center">
+                  <p className="text-xs text-muted">
+                    Response guaranteed within 2 hours during business hours
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

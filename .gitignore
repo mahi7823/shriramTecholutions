@@ -50,7 +50,7 @@ Thumbs.db
 logs
 *.log
 
-# Package manager lock files
-package-lock.json
+# Package manager lock files (keep package-lock.json for npm projects)
+# package-lock.json  # Uncomment this only if using yarn or pnpm exclusively
 yarn.lock
 pnpm-lock.yaml

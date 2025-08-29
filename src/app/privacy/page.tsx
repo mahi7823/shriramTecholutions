@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Layout from '@/components/layout/Layout'
 import { Shield, Lock, Eye, FileText, Users, MessageCircle, Phone, Mail } from 'lucide-react'
+import { contactInfo, generateWhatsAppLink, generateEmailLink, generatePhoneLink } from '@/config/contactInfo'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - Shriram Tech Solutions',
@@ -267,25 +268,25 @@ export default function PrivacyPolicyPage() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/917433000131?text=Hi! I have questions about your privacy policy and data protection measures."
+              href={generateWhatsAppLink("Hi! I have questions about your privacy policy and data protection measures.")}
               className="inline-flex items-center px-6 py-3 bg-green-500 text-white text-base font-semibold rounded-lg hover:bg-green-600 transition-colors"
             >
               <MessageCircle className="mr-2 w-5 h-5" />
               WhatsApp Privacy Team
             </a>
             <a
-              href="mailto:privacy@shriramtech.com"
+              href="mailto:privacy@shritech.digital"
               className="inline-flex items-center px-6 py-3 bg-white text-blue-600 text-base font-semibold rounded-lg hover:bg-gray-100 transition-colors"
             >
               <Mail className="mr-2 w-5 h-5" />
-              privacy@shriramtech.com
+              {contactInfo.email}
             </a>
             <a
-              href="tel:+917433000131"
+              href={generatePhoneLink()}
               className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-white text-white text-base font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors"
             >
               <Phone className="mr-2 w-5 h-5" />
-              +91 7433000131
+              {contactInfo.phone}
             </a>
           </div>
           

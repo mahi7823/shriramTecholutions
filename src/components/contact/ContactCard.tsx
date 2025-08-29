@@ -8,17 +8,23 @@ interface ContactCardProps {
 
 export default function ContactCard({ icon: Icon, title, description }: ContactCardProps) {
   return (
-    <div className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-6">
-      <Icon className="w-8 h-8 mx-auto mb-3" />
-      <h3 className="font-bold mb-2">{title}</h3>
-      <p>
+    <div className="card card-md text-center group bg-[var(--color-surface-1)] border border-[var(--color-border)]" tabIndex={0} role="article" aria-labelledby={`contact-card-${title.toLowerCase().replace(/\s+/g, '-')}`}>
+      {/* Icon */}
+      <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-glow-cyan group-focus:scale-110 group-focus:shadow-glow-cyan">
+        <Icon className="w-6 h-6 text-white" aria-hidden="true" />
+      </div>
+      
+      <h3 id={`contact-card-${title.toLowerCase().replace(/\s+/g, '-')}`} className="mb-3 group-hover:text-gradient group-focus:text-gradient transition-all duration-300">
+        {title}
+      </h3>
+      
+      <div className="text-small text-muted space-y-1">
         {description.map((line, idx) => (
-          <span key={idx}>
+          <div key={idx} className="leading-relaxed">
             {line}
-            {idx < description.length - 1 && <br />}
-          </span>
+          </div>
         ))}
-      </p>
+      </div>
     </div>
   );
 }

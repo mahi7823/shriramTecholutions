@@ -1,0 +1,31 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6a2a"/>
+      <stop offset="100%" stop-color="#ff3b1f"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="transparent"/>
+  <!-- Geometric star made from 6 rotated kites -->
+  <g transform="translate(64,64)" filter="url(#softGlow)">
+    <g fill="url(#brandOrange)" stroke="#dd3b1a" stroke-width="0.8" opacity="0.98">
+      <path d="M0,-44 L10,-20 L0,-14 L-10,-20 Z" transform="rotate(0)"/>
+      <path d="M0,-44 L10,-20 L0,-14 L-10,-20 Z" transform="rotate(60)"/>
+      <path d="M0,-44 L10,-20 L0,-14 L-10,-20 Z" transform="rotate(120)"/>
+      <path d="M0,-44 L10,-20 L0,-14 L-10,-20 Z" transform="rotate(180)"/>
+      <path d="M0,-44 L10,-20 L0,-14 L-10,-20 Z" transform="rotate(240)"/>
+      <path d="M0,-44 L10,-20 L0,-14 L-10,-20 Z" transform="rotate(300)"/>
+    </g>
+    <!-- Inner rotated hexagon for depth -->
+    <polygon points="0,-18 15,-8 12,12 -12,12 -15,-8" fill="rgba(255,107,50,0.25)"/>
+  </g>
+</svg>
+
+

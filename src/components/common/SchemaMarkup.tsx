@@ -1,16 +1,17 @@
 import Script from 'next/script'
+import { contactInfo } from '@/config/contactInfo'
 
 export default function SchemaMarkup() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Shriram Tech Solutions",
-    "description": "Professional AI/ML Developer & WhatsApp Business API Expert with 5+ years experience. Specializing in intelligent automation solutions for businesses.",
-    "url": "https://www.shritech.digital",
-    "logo": "https://www.shritech.digital/logo.png",
+    "name": contactInfo.name,
+    "description": contactInfo.professional.title + " with 5+ years experience. Specializing in intelligent automation solutions for businesses.",
+    "url": contactInfo.website,
+    "logo": `${contactInfo.website}/logo-mark.svg`,
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+91-7433000131",
+      "telephone": contactInfo.phone,
       "contactType": "customer service",
       "availableLanguage": ["English", "Hindi"]
     },
@@ -20,18 +21,19 @@ export default function SchemaMarkup() {
       "addressRegion": "India"
     },
     "sameAs": [
-      "https://github.com/mahi7823/shriramTecholutions"
-    ]
+      contactInfo.socialMedia.github,
+      contactInfo.socialMedia.linkedin
+    ].filter(Boolean)
   }
 
   const professionalServiceSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Shriram Tech Solutions",
+    "name": contactInfo.name,
     "description": "AI/ML Development Services, WhatsApp Business API Integration, Machine Learning Solutions, and Intelligent Automation",
-    "url": "https://www.shritech.digital",
-    "telephone": "+91-7433000131",
-    "email": "myadav8890@outlook.com",
+    "url": contactInfo.website,
+    "telephone": contactInfo.phone,
+    "email": contactInfo.email,
     "areaServed": "India",
     "serviceType": [
       "AI Development",
@@ -85,12 +87,12 @@ export default function SchemaMarkup() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Shriram Tech Solutions",
-    "jobTitle": "AI/ML Developer & WhatsApp Business API Expert",
-    "description": "Professional AI/ML Developer with 5+ years experience specializing in WhatsApp Business API, FastAPI, Next.js, and Python solutions",
-    "url": "https://www.shritech.digital",
-    "email": "myadav8890@outlook.com",
-    "telephone": "+91-7433000131",
+    "name": contactInfo.name,
+    "jobTitle": contactInfo.professional.title,
+    "description": `Professional AI/ML Developer with 5+ years experience specializing in ${contactInfo.professional.specializations.slice(0, 4).join(', ')}`,
+    "url": contactInfo.website,
+    "email": contactInfo.email,
+    "telephone": contactInfo.phone,
     "knowsAbout": [
       "Artificial Intelligence",
       "Machine Learning",
@@ -118,12 +120,12 @@ export default function SchemaMarkup() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Shriram Tech Solutions",
-    "url": "https://www.shritech.digital",
+    "url": "https://shritech.digital",
     "description": "Professional AI/ML Developer Portfolio - WhatsApp Business API Expert",
     "inLanguage": "en-US",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://www.shritech.digital/?q={search_term_string}",
+      "target": "https://shritech.digital/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
@@ -136,25 +138,25 @@ export default function SchemaMarkup() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.shritech.digital"
+        "item": "https://shritech.digital"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.shritech.digital/#services"
+        "item": "https://shritech.digital/#services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "About Us",
-        "item": "https://www.shritech.digital/about"
+        "item": "https://shritech.digital/about"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Contact",
-        "item": "https://www.shritech.digital/#contact"
+        "item": "https://shritech.digital/#contact"
       }
     ]
   }

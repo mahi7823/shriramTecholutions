@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
+import blogs from '@/data/blogs.json'
 
 export const metadata: Metadata = {
   title: 'AI/ML Development Blog - Latest Insights & Case Studies',
@@ -12,44 +13,7 @@ export const metadata: Metadata = {
   ]
 }
 
-const blogPosts = [
-  {
-    id: 'whatsapp-api-restaurant-success',
-    title: 'How WhatsApp Business API Increased Restaurant Orders by 300%',
-    excerpt: 'Discover how a Delhi restaurant chain transformed their ordering process using AI-powered WhatsApp automation, reducing errors by 45% and tripling their order volume.',
-    readTime: '8 min read',
-    category: 'Case Study',
-    publishedAt: '2024-01-15',
-    slug: '/blog/whatsapp-api-restaurant-success'
-  },
-  {
-    id: 'ai-document-processing-guide',
-    title: 'Complete Guide to AI Document Processing for Indian Businesses',
-    excerpt: 'Step-by-step implementation guide for automated document processing using Python, spaCy, and NLP. Achieve 95% accuracy in data extraction.',
-    readTime: '12 min read',
-    category: 'Technical Guide',
-    publishedAt: '2024-01-10',
-    slug: '/blog/ai-document-processing-guide'
-  },
-  {
-    id: 'fastapi-vs-django-ai',
-    title: 'FastAPI vs Django for AI Development: Complete Comparison 2024',
-    excerpt: 'Comprehensive analysis of FastAPI and Django for AI/ML projects. Performance benchmarks, scalability, and real-world implementation examples.',
-    readTime: '10 min read',
-    category: 'Technical Comparison',
-    publishedAt: '2024-01-05',
-    slug: '/blog/fastapi-vs-django-ai'
-  },
-  {
-    id: 'cost-effective-ai-small-business',
-    title: 'Cost-Effective AI Solutions for Small Businesses in India',
-    excerpt: 'Practical AI implementation strategies for SMEs with limited budgets. ROI analysis, implementation roadmap, and affordable technology stack.',
-    readTime: '9 min read',
-    category: 'Business Strategy',
-    publishedAt: '2024-01-01',
-    slug: '/blog/cost-effective-ai-small-business'
-  }
-]
+const blogPosts = blogs
 
 export default function BlogPage() {
   return (

@@ -6,7 +6,7 @@ interface CaseStudyCardProps {
 
 export default function CaseStudyCard({ study }: CaseStudyCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-colors duration-200">
+    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-colors duration-200 border border-gray-200 dark:border-blue-800/40">
       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{study.title}</h3>
       
       <div className="grid md:grid-cols-2 gap-6 mb-6">

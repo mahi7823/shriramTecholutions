@@ -9,20 +9,36 @@ export default function ServiceCard({ service, onDemoClick }: ServiceCardProps) 
   const Icon = service.icon;
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 hover:shadow-xl transition-all duration-200">
-      <div className="mb-4">
-        <Icon className="w-12 h-12 text-blue-500 dark:text-blue-400" />
+    <div className="card card-md group cursor-pointer bg-[var(--color-surface-1)] border border-[var(--color-border)]" onClick={() => onDemoClick(service.demo)}>
+      {/* Icon */}
+      <div className="mb-6">
+        <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-xl flex items-center justify-center mb-4">
+          <Icon className="w-8 h-8 text-white" />
+        </div>
+        
+        {/* Tech badge */}
+        <div className="inline-block px-3 py-1 text-xs bg-gray-100 text-cyan-700 rounded-full border border-gray-200 dark:bg-gray-800 dark:text-cyan-400 dark:border-gray-700">
+          {service.tech}
+        </div>
       </div>
-      <div className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-3 py-1 rounded-full mb-4 inline-block">
-        {service.tech}
-      </div>
-      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{service.title}</h3>
-      <p className="text-gray-600 dark:text-gray-300 mb-6">{service.description}</p>
+      
+      <h3 className="mb-4">
+        {service.title}
+      </h3>
+      
+      <p className="mb-6 leading-relaxed">
+        {service.description}
+      </p>
+      
+      {/* Demo button */}
       <button
-        onClick={() => onDemoClick(service.demo)}
-        className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all"
+        onClick={(e) => {
+          e.stopPropagation();
+          onDemoClick(service.demo);
+        }}
+        className="w-full btn btn-primary"
       >
-        Try Live Demo
+        Try Live Demo →
       </button>
     </div>
   );

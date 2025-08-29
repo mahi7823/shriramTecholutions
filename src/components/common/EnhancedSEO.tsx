@@ -7,7 +7,7 @@ export default function EnhancedSEO() {
   
   // Page-specific structured data
   const getPageSpecificSchema = () => {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.shritech.digital'
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://shritech.digital'
     
     if (pathname === '/') {
       return {
@@ -66,7 +66,7 @@ export default function EnhancedSEO() {
       <meta httpEquiv="X-Frame-Options" content="DENY" />
       
       {/* Canonical URL */}
-      <link rel="canonical" href={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.shritech.digital'}${pathname}`} />
+      <link rel="canonical" href={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://shritech.digital'}${pathname}`} />
     </>
   )
 }

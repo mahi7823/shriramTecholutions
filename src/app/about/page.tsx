@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Layout from '@/components/layout/Layout'
 import { Award, Code, Users, Zap, CheckCircle, MessageCircle, Phone, Mail } from 'lucide-react'
+import { contactInfo, generateWhatsAppLink, generateEmailLink, generatePhoneLink } from '@/config/contactInfo'
 
 export const metadata: Metadata = {
   title: 'About Us - Professional AI/ML Development Services',
@@ -204,24 +205,24 @@ export default function AboutPage() {
             Join the businesses that have already experienced measurable growth through our AI/ML solutions 
             and WhatsApp Business API integration.
           </p>
-          
+                    
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/917433000131?text=Hi! I'm interested in learning more about your AI/ML services and how they can transform my business."
+              href={generateWhatsAppLink(contactInfo.whatsappMessages.consultation)}
               className="inline-flex items-center px-6 py-3 bg-green-500 text-white text-base font-semibold rounded-lg hover:bg-green-600 transition-colors"
             >
               <MessageCircle className="mr-2 w-5 h-5" />
               Start Your Transformation
             </a>
             <a
-              href="tel:+917433000131"
+              href={generatePhoneLink()}
               className="inline-flex items-center px-6 py-3 bg-white text-blue-600 text-base font-semibold rounded-lg hover:bg-gray-100 transition-colors"
             >
               <Phone className="mr-2 w-5 h-5" />
-              Call: +91 7433000131
+              Call: {contactInfo.phone}
             </a>
             <a
-              href="mailto:contact@shriramtech.com"
+              href={generateEmailLink()}
               className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-white text-white text-base font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors"
             >
               <Mail className="mr-2 w-5 h-5" />

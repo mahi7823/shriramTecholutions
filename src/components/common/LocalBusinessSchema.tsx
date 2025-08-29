@@ -1,16 +1,17 @@
 import Script from 'next/script'
+import { contactInfo } from '@/config/contactInfo'
 
 export default function LocalBusinessSchema() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://www.shritech.digital/#LocalBusiness",
-    "name": "Shriram Tech Solutions",
+    "@id": `${contactInfo.website}/#LocalBusiness`,
+    "name": contactInfo.name,
     "alternateName": "ShriTech Digital",
-    "description": "Professional AI/ML Developer & WhatsApp Business API Expert serving businesses across India. Specializing in intelligent automation, chatbot development, and machine learning solutions.",
-    "url": "https://www.shritech.digital",
-    "telephone": "+91-7433000131",
-    "email": "myadav8890@outlook.com",
+    "description": `${contactInfo.professional.title} serving businesses across India. Specializing in ${contactInfo.professional.specializations.slice(0, 3).join(', ')}.`,
+    "url": contactInfo.website,
+    "telephone": contactInfo.phone,
+    "email": contactInfo.email,
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "IN",
@@ -144,9 +145,11 @@ export default function LocalBusinessSchema() {
       }
     ],
     "sameAs": [
-      "https://github.com/mahi7823/shriramTecholutions",
-      "https://www.linkedin.com/company/shriram-tech-solutions"
-    ]
+      contactInfo.socialMedia.github,
+      contactInfo.socialMedia.linkedin,
+      contactInfo.socialMedia.twitter,
+      contactInfo.socialMedia.facebook
+    ].filter(Boolean)
   }
 
   return (

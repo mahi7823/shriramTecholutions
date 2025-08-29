@@ -1,4 +1,5 @@
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Github, Linkedin, Twitter, Facebook, Instagram, Youtube } from 'lucide-react';
+import { contactInfo as contact, generateWhatsAppLink, generateEmailLink, generatePhoneLink } from '@/config/contactInfo';
 
 export default function Footer() {
   const sections = [
@@ -37,52 +38,122 @@ export default function Footer() {
     }
   ];
 
-  const contactInfo = [
-    { icon: Phone, text: '+91 7433000131' },
-    { icon: Mail, text: 'contact@shriramtech.com' },
-    { icon: MapPin, text: 'India (Remote Services)' },
-    { icon: Clock, text: 'Available 6-11 PM' }
+  const contactDetails = [
+    { icon: Phone, text: contact.phone, href: generatePhoneLink() },
+    { icon: Mail, text: contact.email, href: generateEmailLink() },
+    { icon: MapPin, text: contact.location },
+    { icon: Clock, text: contact.availability }
   ];
 
+  const socialLinks = [
+    { icon: Linkedin, href: contact.socialMedia.linkedin, label: 'LinkedIn' },
+    { icon: Github, href: contact.socialMedia.github, label: 'GitHub' },
+    { icon: Twitter, href: contact.socialMedia.twitter, label: 'Twitter' },
+    { icon: Facebook, href: contact.socialMedia.facebook, label: 'Facebook' },
+    { icon: Instagram, href: contact.socialMedia.instagram, label: 'Instagram' },
+    { icon: Youtube, href: contact.socialMedia.youtube, label: 'YouTube' }
+  ].filter(link => link.href && link.href !== 'null'); // Only show links that are set
+
   return (
-    <footer className="bg-gray-900 dark:bg-gray-950 text-white py-16 transition-colors duration-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          {sections.map((section) => (
-            <div key={section.title}>
-              <h3 className="text-xl font-bold mb-4 text-blue-400">{section.title}</h3>
-              <ul className="space-y-2 text-gray-300">
-                {section.items.map((item) => (
-                  <li key={item}>{item}</li>
+    <footer className="py-20 bg-[var(--color-surface-1)] dark:bg-gray-900 border-t border-[var(--color-border)] dark:border-gray-800">
+      <div className="container">
+        {/* Main Footer Content - 3 Column Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
+          {/* Column 1: Company Info */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Shriram Tech Solutions</h3>
+            <p className="mb-6 leading-relaxed">
+              Transforming businesses with cutting-edge AI/ML solutions, WhatsApp Business API integrations, and modern web applications.
+            </p>
+            
+            {/* Social Links */}
+            <div>
+              <h4 className="font-semibold mb-4">Connect With Us</h4>
+              <div className="flex space-x-4">
+                {socialLinks.map(({ icon: Icon, href, label }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    className="w-10 h-10 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-200"
+                    aria-label={label}
+                  >
+                    <Icon size={18} />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+          
+          {/* Column 2: Quick Links */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div>
+              <h4 className="font-semibold mb-4">Services</h4>
+              <ul className="space-y-3">
+                {sections[0].items.slice(0, 4).map((item) => (
+                  <li key={item}>
+                    <span className="text-sm hover:text-cyan-400 transition-colors cursor-pointer">{item}</span>
+                  </li>
                 ))}
               </ul>
             </div>
-          ))}
-
+            
+            <div>
+              <h4 className="font-semibold mb-4">Technologies</h4>
+              <ul className="space-y-3">
+                {sections[2].items.slice(0, 4).map((item) => (
+                  <li key={item}>
+                    <span className="text-sm hover:text-cyan-400 transition-colors cursor-pointer">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          
+          {/* Column 3: Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-blue-400">Contact</h3>
-            <ul className="space-y-2 text-gray-300">
-              {contactInfo.map(({ icon: Icon, text }) => (
+            <h4 className="font-semibold mb-4">Get In Touch</h4>
+            <ul className="space-y-4 mb-8">
+              {contactDetails.map(({ icon: Icon, text, href }) => (
                 <li key={text} className="flex items-center">
-                  <Icon className="w-4 h-4 mr-2" /> {text}
+                  <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-lg flex items-center justify-center mr-3">
+                    <Icon size={16} className="text-white" />
+                  </div>
+                  {href ? (
+                    <a href={href} className="text-sm hover:text-cyan-400 transition-colors">
+                      {text}
+                    </a>
+                  ) : (
+                    <span className="text-sm">{text}</span>
+                  )}
                 </li>
               ))}
             </ul>
+            
+            {/* CTA Button */}
+            <a
+              href={generateWhatsAppLink()}
+              className="btn btn-primary"
+            >
+              Start Your Project
+            </a>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-gray-300">
+        {/* Bottom Section */}
+        <div className="border-t border-[var(--color-border)] dark:border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-center md:text-left mb-4 md:mb-0">
-              <p>&copy; 2025 Shriram Tech Solutions. All rights reserved.</p>
-              <p className="mt-1">Transforming businesses with AI/ML and WhatsApp Business API</p>
+              <p className="text-sm">
+                &copy; 2025 Shriram Tech Solutions. All rights reserved.
+              </p>
+              <p className="text-xs mt-1 opacity-60">
+                Built with ❤️ using Next.js, TypeScript & Tailwind CSS
+              </p>
             </div>
-            <div className="flex flex-wrap justify-center md:justify-end gap-4 text-sm">
-              <a href="/about" className="hover:text-blue-400 transition-colors">About Us</a>
-              <span className="text-gray-500">|</span>
-              <a href="/privacy" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
-              <span className="text-gray-500">|</span>
-              <a href="/#contact" className="hover:text-blue-400 transition-colors">Contact</a>
+            <div className="flex items-center space-x-6">
+              <a href="/about" className="text-sm hover:text-cyan-400 transition-colors">About</a>
+              <a href="/privacy" className="text-sm hover:text-cyan-400 transition-colors">Privacy</a>
+              <a href="/#contact" className="text-sm hover:text-cyan-400 transition-colors">Contact</a>
             </div>
           </div>
         </div>

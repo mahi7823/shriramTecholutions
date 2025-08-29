@@ -12,12 +12,30 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    domains: ['www.shritech.digital'],
+    domains: ['shritech.digital'],
   },
   
   // Performance optimizations
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
+  },
+  
+  // Redirects for SEO and domain canonicalization
+  async redirects() {
+    return [
+      // Redirect www to non-www for canonical URLs
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.shritech.digital',
+          },
+        ],
+        destination: 'https://shritech.digital/:path*',
+        permanent: true,
+      },
+    ];
   },
   
   // SEO and performance headers

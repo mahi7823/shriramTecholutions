@@ -7,16 +7,17 @@ import FAQSchema from '@/components/common/FAQSchema'
 import LocalBusinessSchema from '@/components/common/LocalBusinessSchema'
 import EnhancedSEO from '@/components/common/EnhancedSEO'
 import { ThemeProvider } from '@/contexts/ThemeContext'
+import { contactInfo } from '@/config/contactInfo'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.shritech.digital'),
+  metadataBase: new URL(contactInfo.website),
   title: {
     default: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert | 5+ Years Experience',
     template: '%s | Shriram Tech Solutions - AI/ML Expert'
   },
-  description: 'Professional AI/ML Developer with 5+ years experience in India. WhatsApp Business API specialist, FastAPI, Next.js, Python solutions. Proven results: 300% order increases, 95% accuracy rates. Contact: myadav8890@outlook.com | +91-7433000131',
+  description: `Professional AI/ML Developer with 5+ years experience in India. WhatsApp Business API specialist, FastAPI, Next.js, Python solutions. Proven results: 300% order increases, 95% accuracy rates. Contact: ${contactInfo.email} | ${contactInfo.phone}`,
   keywords: [
     // Primary keywords
     'AI developer India', 'ML developer India', 'WhatsApp Business API expert India', 'AI consultant India',
@@ -45,11 +46,11 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://www.shritech.digital',
-    siteName: 'Shriram Tech Solutions',
+      openGraph: {
+      type: 'website',
+      locale: 'en_US',
+      url: contactInfo.website,
+      siteName: 'Shriram Tech Solutions',
     title: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert',
     description: 'Professional AI/ML Developer with 5+ years experience. WhatsApp Business API, FastAPI, Next.js, Python solutions.',
     images: [
@@ -82,6 +83,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <EnhancedSEO />
+        <link rel="icon" href="/logo-mark.svg" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>

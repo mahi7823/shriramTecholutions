@@ -5,6 +5,7 @@ import Layout from '@/components/layout/Layout';
 import Hero from '@/components/home/Hero';
 import ServicesList from '@/components/services/ServicesList';
 import CaseStudiesList from '@/components/case-studies/CaseStudiesList';
+import AboutSection from '@/components/about/AboutSection';
 import ContactSection from '@/components/contact/ContactSection';
 import { DemoModal, ChatbotDemo, DocumentDemo, PredictionDemo, VisionDemo } from '@/components/demos';
 
@@ -31,6 +32,7 @@ export default function HomePage() {
         <Hero stats={stats} />
       <ServicesList onDemoClick={setActiveDemo} />
       <CaseStudiesList />
+      <AboutSection />
       <ContactSection />
 
       <DemoModal demo={activeDemo} onClose={() => setActiveDemo(null)}>

@@ -5,6 +5,7 @@
 ### 1. Environment Variables Setup
 - [ ] `.env.local` created with real Google Analytics ID: `G-EJBKR606DM`
 - [ ] Google verification token added: `ZayAh0RA-19RpBttk3oDglvibUIlI3sdqdp-oBOzLwQ`
+- [ ] Site URL set to main domain: `NEXT_PUBLIC_SITE_URL=https://shritech.digital`
 - [ ] All placeholder values replaced with real data
 
 ### 2. Files Updated
@@ -22,7 +23,7 @@ Go to your Vercel project dashboard and add these environment variables:
 ```
 NEXT_PUBLIC_GA_ID=G-EJBKR606DM
 NEXT_PUBLIC_GOOGLE_VERIFICATION=ZayAh0RA-19RpBttk3oDglvibUIlI3sdqdp-oBOzLwQ
-NEXT_PUBLIC_SITE_URL=https://www.shritech.digital
+NEXT_PUBLIC_SITE_URL=https://shritech.digital
 ```
 
 ### 2. Deploy Commands
@@ -43,22 +44,23 @@ git push origin main
 
 ### 1. Verify Your Property
 1. Go to [Google Search Console](https://search.google.com/search-console)
-2. Add property: `https://www.shritech.digital`
-3. Verification should be automatic (we added the meta tag)
-4. If not verified, check that the verification token matches: `ZayAh0RA-19RpBttk3oDglvibUIlI3sdqdp-oBOzLwQ`
+2. Add property: `https://shritech.digital` (main domain)
+3. Add property: `https://www.shritech.digital` (will redirect to main)
+4. Verification should be automatic (we added the meta tag)
+5. If not verified, check that the verification token matches: `ZayAh0RA-19RpBttk3oDglvibUIlI3sdqdp-oBOzLwQ`
 
 ### 2. Submit Sitemap
 1. In Google Search Console, go to "Sitemaps"
-2. Submit: `https://www.shritech.digital/sitemap.xml`
+2. Submit: `https://shritech.digital/sitemap.xml`
 3. Check for any errors
 
 ### 3. Request Indexing
 1. Go to "URL Inspection" tool
-2. Enter: `https://www.shritech.digital`
+2. Enter: `https://shritech.digital`
 3. Click "Request Indexing"
 4. Repeat for key pages:
-   - `https://www.shritech.digital/about`
-   - `https://www.shritech.digital/blog`
+   - `https://shritech.digital/about`
+   - `https://shritech.digital/blog`
 
 ## 📊 Google Analytics Setup
 
@@ -131,8 +133,8 @@ Your analytics setup includes enhanced tracking for:
 - Ensure GDPR compliance (if applicable)
 
 ### Pages Not Indexed?
-- Check robots.txt: `https://www.shritech.digital/robots.txt`
-- Verify sitemap: `https://www.shritech.digital/sitemap.xml`
+- Check robots.txt: `https://shritech.digital/robots.txt`
+- Verify sitemap: `https://shritech.digital/sitemap.xml`
 - Use URL Inspection tool in Search Console
 
 ### Verification Failed?
@@ -159,7 +161,7 @@ Your analytics setup includes enhanced tracking for:
 You'll know it's working when:
 - ✅ Google Analytics shows real-time visitors
 - ✅ Search Console shows "Property verified"
-- ✅ Site appears in Google search: `site:www.shritech.digital`
+- ✅ Site appears in Google search: `site:shritech.digital`
 - ✅ Rich snippets appear in search results
 - ✅ Social media shows proper preview cards
 
