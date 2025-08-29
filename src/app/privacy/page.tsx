@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Layout from '@/components/layout/Layout'
 import { Shield, Lock, Eye, FileText, Users, MessageCircle, Phone, Mail } from 'lucide-react'
-import { contactInfo, generateWhatsAppLink, generateEmailLink, generatePhoneLink } from '@/config/contactInfo'
+import { contactInfo, generateWhatsAppLink, generatePhoneLink } from '@/config/contactInfo'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - Shriram Tech Solutions',
@@ -275,7 +275,7 @@ export default function PrivacyPolicyPage() {
               WhatsApp Privacy Team
             </a>
             <a
-              href="mailto:privacy@shritech.digital"
+              href={`mailto:${contactInfo.email}?subject=Privacy Policy Question`}
               className="inline-flex items-center px-6 py-3 bg-white text-blue-600 text-base font-semibold rounded-lg hover:bg-gray-100 transition-colors"
             >
               <Mail className="mr-2 w-5 h-5" />
