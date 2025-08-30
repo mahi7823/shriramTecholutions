@@ -7,7 +7,6 @@ import FAQSchema from '@/components/common/FAQSchema'
 import LocalBusinessSchema from '@/components/common/LocalBusinessSchema'
 import EnhancedSEO from '@/components/common/EnhancedSEO'
 import { ThemeProvider } from '@/contexts/ThemeContext'
-import { contactInfo } from '@/config/contactInfo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -103,4 +102,5 @@ export default function RootLayout({
     </html>
   )
 }
+
 
