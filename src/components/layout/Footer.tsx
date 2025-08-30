@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Clock, Github, Linkedin, Twitter, Facebook, Instagram, Youtube } from 'lucide-react';
 import { contactInfo as contact, generateWhatsAppLink, generateEmailLink, generatePhoneLink } from '@/config/contactInfo';
+import SEOContent from '@/components/common/SEOContent';
 
 export default function Footer() {
   const sections = [
@@ -139,6 +140,11 @@ export default function Footer() {
               Start Your Project
             </a>
           </div>
+        </div>
+
+        {/* SEO Content for better text/code ratio */}
+        <div className="mb-12">
+          <SEOContent variant="footer" className="" />
         </div>
 
         {/* Bottom Section */}

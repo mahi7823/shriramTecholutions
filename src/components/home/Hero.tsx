@@ -1,5 +1,6 @@
 import { ArrowRight, MessageCircle } from 'lucide-react';
 import type { Stats } from '@/types';
+import SEOContent from '@/components/common/SEOContent';
 
 interface HeroProps {
   stats: Stats;
@@ -35,9 +36,24 @@ export default function Hero({ stats }: HeroProps) {
               Shriram Tech Solutions: AI/ML Developer & WhatsApp API Expert
             </h1>
             
-            <p className="mb-8 text-lg">
+            <p className="mb-6 text-lg leading-relaxed">
               We build intelligent chatbots, AI agents, and modern technology-driven web solutions, delivered by expert AI/ML developers and WhatsApp Business API specialists.
             </p>
+            
+            {/* Additional descriptive content for SEO */}
+            <div className="mb-8 space-y-4 text-base text-gray-700 dark:text-gray-300">
+              <p>
+                With over 5 years of experience in artificial intelligence and machine learning development, 
+                we specialize in creating custom AI solutions that automate business processes, reduce operational costs, 
+                and increase revenue. Our expertise includes FastAPI development, Python automation, Next.js web applications, 
+                and comprehensive WhatsApp Business API integrations.
+              </p>
+              <p>
+                From intelligent customer support chatbots that handle 80% of customer queries automatically to 
+                advanced document processing systems that achieve 95% accuracy in data extraction, we deliver 
+                production-ready AI solutions that provide measurable business impact and ROI within 3-6 months.
+              </p>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a href="#contact" title="Get a free consultation - Contact" className="btn btn-primary btn-lg">
@@ -88,6 +104,11 @@ export default function Hero({ stats }: HeroProps) {
               <div className="text-sm">AI Support</div>
             </div>
           </div>
+        </div>
+        
+        {/* SEO Content for better text/code ratio */}
+        <div className="mt-12">
+          <SEOContent variant="hero" className="max-w-4xl mx-auto px-4" />
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { CheckCircle, Users, Award, TrendingUp } from 'lucide-react';
 import { contactInfo, generateWhatsAppLink } from '@/config/contactInfo';
+import SEOContent from '@/components/common/SEOContent';
 
 export default function AboutSection() {
   const achievements = [
@@ -51,11 +52,54 @@ export default function AboutSection() {
               integrations, intelligent chatbots, and modern technology solutions for the web.
             </p>
             
-            <p className="mb-8">
+            <p className="mb-6">
               My focus is on transforming businesses through cutting-edge technology that delivers 
               measurable results. From automated customer service to predictive analytics, I help 
               companies leverage AI technology to improve efficiency and drive growth.
             </p>
+            
+            {/* Development Process */}
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold mb-4">Our Development Approach</h3>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-xs font-bold text-blue-600 dark:text-blue-400">1</span>
+                  </div>
+                  <div>
+                    <p className="font-medium">Discovery & Analysis</p>
+                    <p className="text-gray-600 dark:text-gray-300">We analyze your business processes, identify automation opportunities, and define clear success metrics for the AI implementation.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-xs font-bold text-blue-600 dark:text-blue-400">2</span>
+                  </div>
+                  <div>
+                    <p className="font-medium">Custom AI Development</p>
+                    <p className="text-gray-600 dark:text-gray-300">Using proven technologies like Python, FastAPI, and TensorFlow, we build custom AI solutions tailored to your specific business needs.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-xs font-bold text-blue-600 dark:text-blue-400">3</span>
+                  </div>
+                  <div>
+                    <p className="font-medium">Integration & Testing</p>
+                    <p className="text-gray-600 dark:text-gray-300">Seamless integration with your existing systems, thorough testing, and performance optimization to ensure reliable operation.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-xs font-bold text-blue-600 dark:text-blue-400">4</span>
+                  </div>
+                  <div>
+                    <p className="font-medium">Deployment & Support</p>
+                    <p className="text-gray-600 dark:text-gray-300">Professional deployment with comprehensive training, documentation, and ongoing 24/7 support to ensure continued success.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Skills */}
             <div className="mb-8">
@@ -130,6 +174,11 @@ export default function AboutSection() {
               </a>
             </div>
           </div>
+        </div>
+        
+        {/* SEO Content for better text/code ratio */}
+        <div className="mt-16">
+          <SEOContent variant="about" className="max-w-5xl mx-auto" />
         </div>
       </div>
     </section>
