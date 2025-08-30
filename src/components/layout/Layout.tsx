@@ -11,7 +11,7 @@ interface LayoutProps {
   description?: string;
 }
 
-export default function Layout({ children, title, description }: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section[id]');
