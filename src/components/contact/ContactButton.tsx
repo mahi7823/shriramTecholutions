@@ -55,6 +55,7 @@ export default function ContactButton({
       style={getButtonBackground()}
       target={href.startsWith('http') ? '_blank' : undefined}
       rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+      title={getAriaLabel()}
       aria-label={getAriaLabel()}
     >
       <Icon size={20} aria-hidden="true" />

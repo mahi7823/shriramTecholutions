@@ -47,14 +47,14 @@ export default function AboutSection() {
             </h2>
             
             <p className="text-lg mb-8">
-              I'm a professional AI/ML developer with 5+ years of experience specializing in 
-              WhatsApp Business API integrations, intelligent chatbots, and modern web solutions.
+              I'm a professional AI/ML developer and WhatsApp Business API expert with 5+ years of experience specializing in 
+              integrations, intelligent chatbots, and modern technology solutions for the web.
             </p>
             
             <p className="mb-8">
               My focus is on transforming businesses through cutting-edge technology that delivers 
               measurable results. From automated customer service to predictive analytics, I help 
-              companies leverage AI to improve efficiency and drive growth.
+              companies leverage AI technology to improve efficiency and drive growth.
             </p>
 
             {/* Skills */}
@@ -75,12 +75,14 @@ export default function AboutSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
+                title="Go to Contact"
                 className="btn btn-primary"
               >
                 Start Your Project
               </a>
               <a
                 href={generateWhatsAppLink()}
+                title="Chat with us on WhatsApp"
                 className="btn btn-secondary"
               >
                 Let's Chat

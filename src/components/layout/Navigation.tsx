@@ -41,6 +41,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <a 
               href="/" 
+              title="Home - Shriram Tech Solutions"
               className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-200"
             >
               <Logo size="md" showText={true} />
@@ -55,6 +56,7 @@ export default function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
+                  title={`${item.name} - Shriram Tech Solutions`}
                   className={`
                     px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg
                     ${isActive 
@@ -72,6 +74,7 @@ export default function Navigation() {
               <ThemeToggle />
               <a
                 href="https://wa.me/917433000131?text=Hi! I'm interested in AI solutions."
+                title="Get Started on WhatsApp"
                 className="btn btn-primary btn-sm"
               >
                 Get Started
@@ -106,6 +109,7 @@ export default function Navigation() {
                   <a
                     key={item.name}
                     href={item.href}
+                    title={`${item.name} - Shriram Tech Solutions`}
                     className={`
                       block py-3 px-4 rounded-lg font-medium transition-colors duration-200
                       ${isActive 
@@ -123,6 +127,7 @@ export default function Navigation() {
               <div className="pt-4 border-t border-gray-700">
                 <a
                   href="https://wa.me/917433000131?text=Hi! I'm interested in AI solutions."
+                  title="Get Started on WhatsApp"
                   className="btn btn-primary w-full justify-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >

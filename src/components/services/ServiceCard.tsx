@@ -27,7 +27,7 @@ export default function ServiceCard({ service, onDemoClick }: ServiceCardProps) 
       </h3>
       
       <p className="mb-6 leading-relaxed">
-        {service.description}
+        {service.description} Our expert team ensures implementation aligned with your business goals.
       </p>
       
       {/* Demo button */}

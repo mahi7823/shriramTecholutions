@@ -63,7 +63,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Shriram Tech Solutions</h3>
             <p className="mb-6 leading-relaxed">
-              Transforming businesses with cutting-edge AI/ML solutions, WhatsApp Business API integrations, and modern web applications.
+              Transforming businesses with cutting-edge AI/ML technology solutions, expert WhatsApp Business API integrations, and modern web applications.
             </p>
             
             {/* Social Links */}
@@ -75,6 +75,7 @@ export default function Footer() {
                     key={label}
                     href={href}
                     className="w-10 h-10 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-200"
+                    title={label}
                     aria-label={label}
                   >
                     <Icon size={18} />
@@ -119,7 +120,7 @@ export default function Footer() {
                     <Icon size={16} className="text-white" />
                   </div>
                   {href ? (
-                    <a href={href} className="text-sm hover:text-cyan-400 transition-colors">
+                    <a href={href} title={text} className="text-sm hover:text-cyan-400 transition-colors">
                       {text}
                     </a>
                   ) : (
@@ -132,6 +133,7 @@ export default function Footer() {
             {/* CTA Button */}
             <a
               href={generateWhatsAppLink()}
+              title="Start your project on WhatsApp"
               className="btn btn-primary"
             >
               Start Your Project
@@ -151,9 +153,9 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex items-center space-x-6">
-              <a href="/about" className="text-sm hover:text-cyan-400 transition-colors">About</a>
-              <a href="/privacy" className="text-sm hover:text-cyan-400 transition-colors">Privacy</a>
-              <a href="/#contact" className="text-sm hover:text-cyan-400 transition-colors">Contact</a>
+              <a href="/about" title="About - Shriram Tech Solutions" className="text-sm hover:text-cyan-400 transition-colors">About</a>
+              <a href="/privacy" title="Privacy Policy - Shriram Tech Solutions" className="text-sm hover:text-cyan-400 transition-colors">Privacy</a>
+              <a href="/#contact" title="Contact - Shriram Tech Solutions" className="text-sm hover:text-cyan-400 transition-colors">Contact</a>
             </div>
           </div>
         </div>

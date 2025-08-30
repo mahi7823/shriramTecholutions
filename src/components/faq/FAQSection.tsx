@@ -265,6 +265,7 @@ export default function FAQSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href={generateWhatsAppLink(contactInfo.whatsappMessages.faq)}
+            title="Ask your question on WhatsApp"
             className="inline-flex items-center px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors"
           >
             <MessageCircle className="mr-2 w-5 h-5" />
@@ -275,12 +276,14 @@ export default function FAQSection() {
               'FAQ Question - Shriram Tech Solutions',
               "Hi, I have a question that wasn't answered in your FAQ."
             )}
+            title="Email us your question"
             className="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
           >
             Email Us
           </a>
           <a
             href="tel:+917433000131"
+            title="Call +91 7433000131"
             className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors"
           >
             Call: +91 7433000131

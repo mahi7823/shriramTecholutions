@@ -57,11 +57,11 @@ export default function ContactSection() {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="mb-6">
-            Ready to Transform Your Business?
+            Ready to Transform Your Business with Technology?
           </h2>
           
           <p className="text-lg mb-12">
-            Get your WhatsApp Business API and AI solutions today. Start with a free consultation and see how we can help your business grow.
+            Get your WhatsApp Business API and AI technology solutions today, implemented by experts. Start with a free consultation and see how we can help your business grow.
           </p>
         </div>
 

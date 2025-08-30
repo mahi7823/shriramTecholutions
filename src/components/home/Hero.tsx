@@ -32,19 +32,19 @@ export default function Hero({ stats }: HeroProps) {
           {/* Left Side - Value Proposition */}
           <div className="animate-fade-in-left animate-stagger-1">
             <h1 className="mb-6 text-[var(--color-text-primary)]">
-              Transform Your Business with AI & Technology
+              Shriram Tech Solutions: AI/ML Developer & WhatsApp API Expert
             </h1>
             
             <p className="mb-8 text-lg">
-              We build intelligent chatbots, AI agents, and modern web solutions that drive measurable results for your business.
+              We build intelligent chatbots, AI agents, and modern technology-driven web solutions, delivered by expert AI/ML developers and WhatsApp Business API specialists.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <a href="#contact" className="btn btn-primary btn-lg">
+              <a href="#contact" title="Get a free consultation - Contact" className="btn btn-primary btn-lg">
                 Get Free Consultation
                 <ArrowRight size={20} />
               </a>
-              <a href="#services" className="btn btn-secondary btn-lg">
+              <a href="#services" title="Explore AI/ML Solutions" className="btn btn-secondary btn-lg">
                 Explore Solutions
               </a>
             </div>

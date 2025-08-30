@@ -11,12 +11,12 @@ export default function ServicesList({ onDemoClick }: ServicesListProps) {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="mb-6">
-            AI/ML Solutions with Live Interactive Demos
+            AI/ML Technology Solutions with Live Interactive Demos
           </h2>
           
           <p className="text-lg mb-12">
             Don't just read about our capabilities - experience them yourself! 
-            Try our interactive demos and see how our AI solutions can transform your business.
+            Try our interactive demos and see how our AI technology solutions can transform your business.
           </p>
         </div>
         
@@ -38,6 +38,7 @@ export default function ServicesList({ onDemoClick }: ServicesListProps) {
         <div className="text-center mt-16">
           <a
             href="https://wa.me/917433000131?text=Hi! I'm interested in AI/ML solutions for my business."
+            title="Get a custom AI/ML solution on WhatsApp"
             className="btn btn-primary btn-lg"
           >
             Get Custom Solution
