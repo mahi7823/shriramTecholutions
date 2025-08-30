@@ -135,6 +135,76 @@ const faqData: FAQItem[] = [
     category: 'Technical Questions',
     icon: Shield,
   },
+  {
+    question: 'Which industries do you specialize in for AI/ML solutions?',
+    answer:
+      'We specialize in e-commerce & retail, restaurants & food delivery, healthcare & medical, legal services, real estate, and manufacturing industries. Our solutions are tailored to address specific industry challenges and regulatory requirements.',
+    category: 'AI/ML Services',
+    icon: Code,
+  },
+  {
+    question: 'Can AI chatbots handle multiple languages?',
+    answer:
+      'Yes, our AI chatbots support multiple languages including Hindi, English, and regional Indian languages. They can automatically detect the customer\'s preferred language and respond accordingly, making them perfect for diverse Indian markets.',
+    category: 'AI/ML Services',
+    icon: MessageCircle,
+  },
+  {
+    question: 'How quickly can you develop a custom AI solution?',
+    answer:
+      'Development timelines vary based on complexity: Simple chatbots (2-3 weeks), Document processing systems (4-6 weeks), Computer vision applications (6-8 weeks), Complex ML models (8-12 weeks). We provide detailed project timelines during consultation.',
+    category: 'Implementation & Support',
+    icon: Clock,
+  },
+  {
+    question: 'Do you provide training for our staff on AI tools?',
+    answer:
+      'Absolutely! We provide comprehensive training programs including hands-on workshops, video tutorials, documentation, and ongoing support. We ensure your team is fully equipped to use and maintain the AI solutions effectively.',
+    category: 'Implementation & Support',
+    icon: Users,
+  },
+  {
+    question: 'What makes your WhatsApp Business API different from others?',
+    answer:
+      'Our WhatsApp Business API solutions include advanced AI chatbots, seamless CRM integration, automated order processing, multilingual support, and detailed analytics. We focus on automation that actually reduces workload and improves customer satisfaction.',
+    category: 'WhatsApp Business API',
+    icon: Award,
+  },
+  {
+    question: 'Can WhatsApp Business API handle e-commerce transactions?',
+    answer:
+      'Yes! Our WhatsApp Business API can handle complete e-commerce workflows including product catalogs, order placement, payment processing, order tracking, and customer support. It\'s like having a complete online store within WhatsApp.',
+    category: 'WhatsApp Business API',
+    icon: DollarSign,
+  },
+  {
+    question: 'What is the minimum commitment period for your services?',
+    answer:
+      'For project-based work, there\'s no minimum commitment. For ongoing services like chatbot maintenance or WhatsApp API management, we recommend a 6-month minimum to see optimal results, but we offer flexible monthly plans as well.',
+    category: 'Pricing & Costs',
+    icon: Clock,
+  },
+  {
+    question: 'Do you offer free trials or demos?',
+    answer:
+      'Yes! We offer free consultations, live demos of our solutions, and proof-of-concept development for qualified prospects. We believe in showing the value before you invest, so you can see exactly how our AI solutions will benefit your business.',
+    category: 'Pricing & Costs',
+    icon: Award,
+  },
+  {
+    question: 'How do you measure the success of AI implementations?',
+    answer:
+      'We track key metrics including accuracy rates, processing time improvements, cost savings, customer satisfaction scores, and ROI. We provide detailed monthly reports and dashboards so you can see the tangible impact of our AI solutions on your business.',
+    category: 'Technical Questions',
+    icon: Award,
+  },
+  {
+    question: 'What backup and disaster recovery options do you provide?',
+    answer:
+      'We implement comprehensive backup strategies including automated daily backups, cloud redundancy, failover systems, and disaster recovery plans. Your AI systems are protected against data loss with 99.9% uptime guarantee and rapid recovery procedures.',
+    category: 'Technical Questions',
+    icon: Shield,
+  },
 ]
 
 const categories: Category[] = [
