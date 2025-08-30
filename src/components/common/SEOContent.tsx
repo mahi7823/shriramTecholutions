@@ -57,7 +57,7 @@ export default function SEOContent({ className = '', variant = 'hero', pageConte
     <div className={`seo-content ${className}`}>
       {/* Hidden SEO content - visible to search engines but not prominent to users */}
       <div className="sr-only">
-        <h2>{title}</h2>
+        {variant !== 'footer' && <h2>{title}</h2>}
         <p>{textContent}</p>
       </div>
       
