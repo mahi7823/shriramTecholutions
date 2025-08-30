@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: '%s | Shriram Tech Solutions'
   },
   description:
-    'AI/ML Developer in India with 5+ years of experience. Expert in WhatsApp Business API, FastAPI, Next.js & Python. Delivered 300% order growth & 95% accuracy.',
+    'AI/ML Developer in India with 5+ years of experience. Expert in WhatsApp Business API, FastAPI, Next.js & Python. ',
   keywords: [
     // Primary keywords
     'AI developer India', 'ML developer India', 'WhatsApp Business API expert India', 'AI consultant India',
