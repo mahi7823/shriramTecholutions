@@ -10,7 +10,7 @@ import { ThemeProvider } from '@/contexts/ThemeContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// ✅ SEO metadata
+// SEO metadata
 export const metadata: Metadata = {
   metadataBase: new URL("https://shritech.digital"),
   title: {
