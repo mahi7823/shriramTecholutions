@@ -27,6 +27,51 @@ export default function BlogPage() {
             Expert insights, case studies, and technical guides on AI development, 
             WhatsApp Business API, and automation strategies for Indian businesses.
           </p>
+          {/* SEO copy to strengthen topical coverage and text/code ratio */}
+          <p className="text-sm text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+            Shriram Tech Solutions publishes technology-focused articles by experienced AI/ML developers and WhatsApp Business API experts.
+            Learn practical implementation patterns with FastAPI, Python, Next.js and modern cloud services, from document processing AI
+            and computer vision to predictive analytics and enterprise automation.
+          </p>
+          
+          {/* Blog Introduction */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-12 text-left max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Why Follow Our AI/ML Blog?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Real-World Experience</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Our blog shares insights from 5+ years of hands-on AI/ML development experience. 
+                  Every article is based on real implementations, actual results, and proven strategies 
+                  that have delivered measurable business value.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Indian Business Focus</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  We understand the unique challenges and opportunities in the Indian market. 
+                  Our content addresses local business needs, regulatory requirements, and 
+                  cost-effective solutions tailored for Indian enterprises.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Technical Excellence</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  From FastAPI performance optimization to WhatsApp Business API integration, 
+                  we provide detailed technical guides that you can implement immediately 
+                  in your projects with confidence.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Proven Results</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Our case studies feature real businesses with actual metrics - from 300% 
+                  order increases to 95% accuracy improvements. Learn from implementations 
+                  that have generated significant ROI.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

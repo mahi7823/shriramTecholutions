@@ -114,6 +114,16 @@ export default function AboutPage() {
 
       {/* Mission Section */}
       <section className="py-20 bg-white dark:bg-gray-800 transition-colors duration-200">
+        {/* SEO copy to strengthen content depth and keyword coverage */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            Shriram Tech Solutions combines deep AI/ML expertise with WhatsApp Business API specialization to deliver 
+            technology solutions that drive measurable business results. Our experienced developers use FastAPI, Python, 
+            Next.js, and modern cloud platforms to build intelligent chatbots, document processing AI, computer vision systems, 
+            and predictive analytics. From small businesses to enterprises, we focus on implementations that reduce costs, 
+            increase revenue, and improve operational efficiency through proven AI technology.
+          </p>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -193,6 +203,236 @@ export default function AboutPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Expertise Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Expertise</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Deep technical knowledge combined with business acumen to deliver solutions that drive real results
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {expertise.map((item, index) => (
+              <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-200">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{item.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-20 bg-white dark:bg-gray-800 transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Why Choose Shriram Tech Solutions?</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              We don't just build AI solutions - we create business transformations that deliver measurable results
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Proven Track Record</h3>
+              <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-green-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>98% project success rate across 50+ implementations</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>Average 300% ROI improvement for client businesses</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>100% client satisfaction with ongoing support</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>Certified WhatsApp Business API partner status</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Technical Excellence</h3>
+              <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-green-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>5+ years specialized in AI/ML development</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>Expert in FastAPI, Python, Next.js, and modern tech stack</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>Advanced ML algorithms with 95%+ accuracy rates</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>Scalable cloud architecture and deployment expertise</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Business Impact</h3>
+              <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-green-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>Helped businesses increase orders by up to 300%</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>Reduced operational costs by 70% through automation</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>Achieved 95% accuracy in document processing systems</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <span>Fast implementation with 2-4 week delivery timelines</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technology Stack Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Technology Stack</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              We leverage cutting-edge technologies and proven frameworks to deliver robust, scalable AI/ML solutions
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">AI/ML Technologies</h3>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-blue-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">Python & TensorFlow</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-green-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">scikit-learn & pandas</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-purple-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">spaCy & NLTK for NLP</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-orange-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">OpenCV for Computer Vision</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Backend & APIs</h3>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-blue-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">FastAPI for high-performance APIs</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-green-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">WhatsApp Business API certified</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-purple-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">PostgreSQL & Redis databases</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-orange-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">Docker & Kubernetes deployment</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Frontend & DevOps</h3>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-blue-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">Next.js & React for modern UIs</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-green-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">TypeScript for type safety</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-purple-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">Tailwind CSS for responsive design</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-orange-600 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300">AWS & Azure cloud platforms</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20 bg-white dark:bg-gray-800 transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Development Process</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              A systematic approach that ensures project success and delivers solutions that exceed expectations
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Discovery & Analysis</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Deep dive into your business requirements, existing systems, and growth objectives to design optimal AI solutions.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Solution Design</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Create detailed technical architecture, user experience flows, and implementation roadmap with clear milestones.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Development & Testing</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Agile development with continuous testing, quality assurance, and performance optimization throughout the process.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Deployment & Support</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Seamless deployment with comprehensive training, documentation, and ongoing technical support for your team.
+              </p>
+            </div>
           </div>
         </div>
       </section>

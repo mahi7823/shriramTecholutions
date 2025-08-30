@@ -30,6 +30,15 @@ export default function FAQPage() {
 
       {/* FAQ Content */}
       <section className="py-20 bg-white dark:bg-gray-800">
+        {/* SEO copy to strengthen topical relevance and text/code ratio */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+          <p className="text-gray-700 dark:text-gray-300 text-sm">
+            Shriram Tech Solutions is an experienced AI/ML developer and WhatsApp Business API expert in India.
+            This FAQ covers our technology-driven services, implementation process, pricing models, and support.
+            If you need tailored AI solutions—chatbots, document processing AI, computer vision, or predictive analytics—
+            our experts can help you plan a secure, scalable deployment aligned with your business goals.
+          </p>
+        </div>
         <FAQSection />
       </section>
     </Layout>

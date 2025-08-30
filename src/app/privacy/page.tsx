@@ -133,6 +133,16 @@ export default function PrivacyPolicyPage() {
 
       {/* Overview Section */}
       <section className="py-16 bg-white">
+        {/* SEO copy to improve text/code ratio and keyword relevance */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+          <p className="text-sm text-gray-600">
+            Shriram Tech Solutions is committed to protecting your privacy when using our AI/ML development services and 
+            WhatsApp Business API solutions. As experienced technology professionals, we understand the importance of data 
+            security in AI implementations, chatbot development, and business automation projects. This comprehensive privacy 
+            policy explains our data handling practices for all services including FastAPI development, Python-based AI solutions, 
+            and Next.js applications.
+          </p>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Privacy Commitment</h2>

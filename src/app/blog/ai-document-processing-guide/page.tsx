@@ -55,7 +55,7 @@ export default function AIDocumentProcessingGuide() {
             </ul>
           </div>
 
-          <h2>Introduction</h2>
+          <h2>Document Processing Challenges</h2>
           <p>
             Manual document processing costs Indian businesses millions in lost productivity. 
             From invoices and contracts to government forms and customer applications, 

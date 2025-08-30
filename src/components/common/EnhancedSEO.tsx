@@ -67,6 +67,11 @@ export default function EnhancedSEO() {
       
       {/* Canonical URL */}
       <link rel="canonical" href={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://shritech.digital'}${pathname}`} />
+      
+      {/* Hreflang for language/region targeting */}
+      <link rel="alternate" hrefLang="en" href={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://shritech.digital'}${pathname}`} />
+      <link rel="alternate" hrefLang="en-IN" href={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://shritech.digital'}${pathname}`} />
+      <link rel="alternate" hrefLang="x-default" href={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://shritech.digital'}${pathname}`} />
     </>
   )
 }

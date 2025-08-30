@@ -3,7 +3,6 @@
 import { useEffect } from 'react';
 import Navigation from './Navigation';
 import Footer from './Footer';
-import SEOHead from './SEOHead';
 import ErrorBoundary from '../common/ErrorBoundary';
 
 interface LayoutProps {
@@ -37,7 +36,6 @@ export default function Layout({ children, title, description }: LayoutProps) {
 
   return (
     <ErrorBoundary>
-      <SEOHead title={title} description={description} />
       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
         <Navigation />
         <main>{children}</main>

@@ -31,11 +31,13 @@ export default function SEOHead({
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content="Shriram Tech Solutions" />
       
-      {/* Twitter */}
+      {/* Twitter - kept consistent for legacy pages that import SEOHead */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@ShriramTechSol" />
+      <meta name="twitter:creator" content="@ShriramTechSol" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:image" content={`https://shritech.digital${ogImage}`} />
       
       {/* Additional SEO */}
       <meta name="robots" content="index, follow" />

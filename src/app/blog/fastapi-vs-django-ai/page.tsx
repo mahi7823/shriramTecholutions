@@ -68,7 +68,7 @@ export default function FastAPIDjangoComparison() {
             </div>
           </div>
 
-          <h2>Introduction</h2>
+          <h2>Framework Selection Overview</h2>
           <p>
             Choosing the right web framework for AI/ML projects is crucial for success. 
             Both FastAPI and Django have their strengths, but the requirements of AI applications 
