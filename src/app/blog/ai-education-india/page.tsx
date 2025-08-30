@@ -3,8 +3,8 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI in Education India: Revolutionizing Learning with Intelligent Solutions',
-  description: 'Discover how AI is transforming education in India. From personalized learning to automated assessment, learn about AI applications that improve student outcomes and teaching efficiency.',
+  title: 'AI Education India: Revolutionizing Learning Solutions',
+  description: 'Discover how AI transforms education in India. From personalized learning to automated assessment, learn about AI applications.',
   keywords: [
     'AI education India', 'personalized learning AI', 'educational technology', 'AI tutoring',
     'automated assessment AI', 'adaptive learning', 'education innovation India', 'AI teaching assistant',

@@ -3,7 +3,7 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Build a WhatsApp Chatbot with FastAPI — Step-by-Step Guide',
+  title: 'WhatsApp Chatbot with FastAPI: Complete Developer Guide',
   description: 'Step-by-step guide to build a production WhatsApp chatbot with FastAPI, Python, and the WhatsApp Business API. Includes auth, deployment, and scaling tips.',
   keywords: [
     'WhatsApp chatbot FastAPI', 'build WhatsApp chatbot with FastAPI', 'WhatsApp Business API python example',

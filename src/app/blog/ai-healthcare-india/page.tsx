@@ -3,8 +3,8 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI in Healthcare India: Transforming Patient Care with Intelligent Solutions',
-  description: 'Discover how AI is revolutionizing healthcare in India. From diagnostic assistance to patient monitoring, learn about AI applications that improve accuracy and accessibility.',
+  title: 'AI Healthcare India: Transforming Patient Care Solutions',
+  description: 'Discover how AI revolutionizes healthcare in India. Learn about diagnostic AI, patient monitoring, and applications improving accuracy.',
   keywords: [
     'AI healthcare India', 'medical AI applications', 'diagnostic AI', 'patient monitoring AI',
     'healthcare automation India', 'medical imaging AI', 'telemedicine AI', 'healthcare technology',

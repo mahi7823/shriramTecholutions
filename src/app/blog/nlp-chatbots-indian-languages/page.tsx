@@ -3,8 +3,8 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'NLP Chatbots for Indian Languages: Complete Implementation Guide',
-  description: 'Build multilingual chatbots for Hindi, Tamil, Telugu, and other Indian languages. Learn NLP techniques, language detection, and cultural adaptation for better user engagement.',
+  title: 'NLP Chatbots for Indian Languages: Complete Guide',
+  description: 'Build multilingual chatbots for Hindi, Tamil, Telugu. Learn NLP techniques, language detection, and cultural adaptation strategies.',
   keywords: [
     'NLP chatbots Indian languages', 'multilingual chatbot development', 'Hindi chatbot',
     'Tamil Telugu chatbot', 'Indian language NLP', 'cultural adaptation chatbot',

@@ -3,7 +3,7 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Computer Vision Solutions for Indian Manufacturing Industry',
+  title: 'AI Computer Vision for Indian Manufacturing: Quality Control Guide',
   description: 'Transform manufacturing with AI computer vision for quality control. 96% accuracy in defect detection, 60% cost reduction. Complete implementation guide.',
   keywords: [
     'AI computer vision manufacturing India', 'automated quality control', 'defect detection AI',
