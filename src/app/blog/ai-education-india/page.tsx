@@ -33,7 +33,7 @@ export default function AIEducationIndia() {
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-            AI in Education India: Revolutionizing Learning with Intelligent Solutions
+            AI in Education India: Revolutionizing Learning
           </h1>
           
           <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -600,7 +600,7 @@ class IntelligentTutoringSystem:
             </div>
           </div>
 
-          <h2>Real-World Success Stories</h2>
+          <h2>AI Education Success Stories in India</h2>
           
           <h3>Case Study: AI-Powered Rural Education</h3>
           <p>
@@ -617,7 +617,7 @@ class IntelligentTutoringSystem:
             The system provided 24/7 homework help and exam preparation support.
           </p>
 
-          <h2>Implementation Challenges and Solutions</h2>
+          <h2>EdTech AI Implementation Challenges</h2>
           
           <h3>Digital Infrastructure</h3>
           <p>
@@ -660,7 +660,7 @@ class IntelligentTutoringSystem:
             interests and learning goals, creating virtual study groups and peer tutoring networks.
           </p>
 
-          <h2>ROI and Business Impact</h2>
+          <h2>Educational AI ROI and Impact Analysis</h2>
           
           <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-6">
             <h3 className="font-semibold mb-3">Education AI ROI Analysis:</h3>
@@ -686,7 +686,7 @@ class IntelligentTutoringSystem:
             </div>
           </div>
 
-          <h2>Implementation Roadmap</h2>
+          <h2>AI Education Platform Implementation Guide</h2>
           
           <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
             <h3 className="font-semibold mb-3">10-Week Education AI Implementation Plan:</h3>

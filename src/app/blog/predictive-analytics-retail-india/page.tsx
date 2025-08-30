@@ -33,7 +33,7 @@ export default function PredictiveAnalyticsRetail() {
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-            Predictive Analytics Transforming Indian Retail: AI-Driven Success Stories
+            Predictive Analytics Transforming Indian Retail
           </h1>
           
           <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -178,7 +178,7 @@ export default function PredictiveAnalyticsRetail() {
             </div>
           </div>
 
-          <h2>Technical Implementation Guide</h2>
+          <h2>Retail Analytics Technical Implementation Guide</h2>
 
           <h3>Data Collection and Preparation</h3>
           

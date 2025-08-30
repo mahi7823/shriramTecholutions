@@ -3,8 +3,8 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Computer Vision for Indian Manufacturing Quality Control',
-  description: 'Transform manufacturing with AI computer vision for quality control. 96% accuracy in defect detection, 60% cost reduction. Complete implementation guide.',
+  title: 'AI Vision Manufacturing India | Shriram Tech',
+  description: 'Transform manufacturing with AI computer vision quality control. 96% accuracy in defect detection, 60% cost reduction. Complete implementation guide.',
   keywords: [
     'AI computer vision manufacturing India', 'automated quality control', 'defect detection AI',
     'manufacturing automation India', 'computer vision inspection', 'AI quality assurance',
@@ -319,7 +319,7 @@ class RealTimeDefectDetector:
             </code>
           </div>
 
-          <h2>Real-World Applications</h2>
+          <h2>Computer Vision Manufacturing Applications</h2>
           
           <h3>Automotive Manufacturing</h3>
           <p>
@@ -378,7 +378,7 @@ class RealTimeDefectDetector:
             </div>
           </div>
 
-          <h2>Implementation Challenges and Solutions</h2>
+          <h2>Manufacturing AI Implementation Challenges</h2>
           
           <h3>Challenge 1: Lighting Variations</h3>
           <p>
@@ -401,7 +401,7 @@ class RealTimeDefectDetector:
             work with experienced system integrators.
           </p>
 
-          <h2>Future Trends and Advancements</h2>
+          <h2>Future of AI in Indian Manufacturing</h2>
           
           <h3>Edge Computing Integration</h3>
           <p>

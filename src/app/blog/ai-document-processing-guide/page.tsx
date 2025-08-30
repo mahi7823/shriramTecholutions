@@ -170,7 +170,7 @@ def extract_invoice_data(text: str) -> Dict[str, Any]:
             systems for seamless data flow.
           </p>
 
-          <h2>Real-World Applications</h2>
+          <h2>Document Processing AI Applications</h2>
           
           <h3>Invoice Processing</h3>
           <p>

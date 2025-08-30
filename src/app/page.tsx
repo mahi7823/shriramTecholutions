@@ -38,7 +38,7 @@ export default function HomePage() {
       <article className="py-12 bg-white dark:bg-gray-900">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <header className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-center">Professional AI/ML Development Services in India</h2>
+            <h2 className="text-2xl font-bold mb-4 text-center">AI/ML Technology Solutions with Measurable Business Impact</h2>
             <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
               Shriram Tech Solutions is a leading AI/ML developer and WhatsApp Business API expert based in India. We design and
               deliver production-grade technology solutions using FastAPI, Python, Next.js and modern cloud platforms. Our focus is

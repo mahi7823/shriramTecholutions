@@ -3,8 +3,8 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Healthcare India: Transforming Patient Care Solutions',
-  description: 'Discover how AI revolutionizes healthcare in India. Learn about diagnostic AI, patient monitoring, telemedicine & medical applications for improved accuracy.',
+  title: 'AI Healthcare India Solutions | Shriram Tech',
+  description: 'Discover how AI revolutionizes healthcare in India. Learn about diagnostic AI, patient monitoring, telemedicine & medical apps for improved accuracy.',
   keywords: [
     'AI healthcare India', 'medical AI applications', 'diagnostic AI', 'patient monitoring AI',
     'healthcare automation India', 'medical imaging AI', 'telemedicine AI', 'healthcare technology',
@@ -33,7 +33,7 @@ export default function AIHealthcareIndia() {
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-            AI in Healthcare India: Transforming Patient Care with Intelligent Solutions
+            AI in Healthcare India: Transforming Patient Care
           </h1>
           
           <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -431,7 +431,7 @@ class TelemedicineAI:
             </div>
           </div>
 
-          <h2>Real-World Success Stories</h2>
+          <h2>Healthcare AI Success Stories in India</h2>
           
           <h3>Case Study: AI-Powered Rural Healthcare</h3>
           <p>
@@ -448,7 +448,7 @@ class TelemedicineAI:
             The system processes 1,000+ mammograms daily, providing instant preliminary results.
           </p>
 
-          <h2>Implementation Challenges and Solutions</h2>
+          <h2>Healthcare AI Implementation Challenges</h2>
           
           <h3>Data Privacy and Security</h3>
           <p>
@@ -491,7 +491,7 @@ class TelemedicineAI:
             and enable complex procedures in remote locations.
           </p>
 
-          <h2>ROI and Business Impact</h2>
+          <h2>Healthcare AI ROI and Impact Metrics</h2>
           
           <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6 mb-6">
             <h3 className="font-semibold mb-3">Healthcare AI ROI Analysis:</h3>
@@ -517,7 +517,7 @@ class TelemedicineAI:
             </div>
           </div>
 
-          <h2>Implementation Roadmap</h2>
+          <h2>Healthcare AI Deployment Roadmap</h2>
           
           <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
             <h3 className="font-semibold mb-3">12-Week Healthcare AI Implementation Plan:</h3>

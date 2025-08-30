@@ -4,18 +4,15 @@ import { Shield, Lock, Eye, FileText, Users, MessageCircle, Phone, Mail, Globe, 
 import { contactInfo, generateWhatsAppLink, generatePhoneLink } from '@/config/contactInfo'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - Shriram Tech Solutions',
-  description: 'Comprehensive Privacy Policy for Shriram Tech Solutions - Learn how we protect your data and privacy when using our AI/ML services and WhatsApp Business API solutions.',
+  title: 'Privacy Policy | Shriram Tech Solutions',
+  description: 'Comprehensive privacy policy for Shriram Tech Solutions. Learn how we protect your data and privacy for AI/ML services and WhatsApp Business API.',
 }
 
 export default function PrivacyPolicyPage() {
   const lastUpdated = "January 2025"
 
   return (
-    <Layout 
-      title="Privacy Policy - Shriram Tech Solutions"
-      description="Comprehensive Privacy Policy for Shriram Tech Solutions - Learn how we protect your data and privacy when using our AI/ML services and WhatsApp Business API solutions."
-    >
+    <Layout>
       {/* Hero Section */}
       <section className="pt-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">

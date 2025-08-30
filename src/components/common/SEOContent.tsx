@@ -41,7 +41,7 @@ export default function SEOContent({ className = '', variant = 'hero' }: SEOCont
       process analysis, AI opportunity identification, ROI projections, and implementation timeline planning.`
     },
     footer: {
-      title: "Shriram Tech Solutions - AI/ML Development Company India",
+      title: "Leading AI/ML Development Company Based in India",
       content: `Shriram Tech Solutions is a premier AI/ML development company based in India, providing comprehensive 
       artificial intelligence solutions to businesses worldwide. We specialize in WhatsApp Business API integration, 
       intelligent chatbot development, document processing automation, computer vision applications, predictive analytics, 
