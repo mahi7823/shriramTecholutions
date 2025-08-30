@@ -11,19 +11,21 @@ import { contactInfo } from '@/config/contactInfo'
 
 const inter = Inter({ subsets: ['latin'] })
 
+// ✅ SEO metadata
 export const metadata: Metadata = {
-  metadataBase: new URL(contactInfo.website),
+  metadataBase: new URL("https://shritech.digital"),
   title: {
-    default: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert | 5+ Years Experience',
-    template: '%s | Shriram Tech Solutions - AI/ML Expert'
+    default: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert',
+    template: '%s | Shriram Tech Solutions'
   },
-  description: `Professional AI/ML Developer with 5+ years experience in India. WhatsApp Business API specialist, FastAPI, Next.js, Python solutions. Proven results: 300% order increases, 95% accuracy rates. Contact: ${contactInfo.email} | ${contactInfo.phone}`,
+  description:
+    'AI/ML Developer in India with 5+ years of experience. Expert in WhatsApp Business API, FastAPI, Next.js & Python. Delivered 300% order growth & 95% accuracy.',
   keywords: [
     // Primary keywords
     'AI developer India', 'ML developer India', 'WhatsApp Business API expert India', 'AI consultant India',
     // Technology keywords
     'FastAPI developer', 'Next.js developer', 'Python AI developer', 'React developer', 'TypeScript developer',
-    // Service keywords  
+    // Service keywords
     'chatbot development India', 'document processing AI', 'computer vision solutions', 'predictive analytics',
     'business intelligence dashboard', 'machine learning automation', 'AI customer support',
     // Location keywords
@@ -46,13 +48,14 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-      openGraph: {
-      type: 'website',
-      locale: 'en_US',
-      url: contactInfo.website,
-      siteName: 'Shriram Tech Solutions',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://shritech.digital',
+    siteName: 'Shriram Tech Solutions',
     title: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert',
-    description: 'Professional AI/ML Developer with 5+ years experience. WhatsApp Business API, FastAPI, Next.js, Python solutions.',
+    description:
+      'AI/ML Developer in India with 5+ years of experience. WhatsApp Business API, FastAPI, Next.js, Python solutions.',
     images: [
       {
         url: '/og-image.svg',
@@ -66,7 +69,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert',
-    description: 'Professional AI/ML Developer with 5+ years experience. WhatsApp Business API, FastAPI, Next.js, Python solutions.',
+    description:
+      'AI/ML Developer in India with 5+ years of experience. WhatsApp Business API, FastAPI, Next.js, Python solutions.',
     images: ['/og-image.svg'],
   },
   verification: {
@@ -82,6 +86,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* ✅ Canonical URL always points to main domain */}
+        <link rel="canonical" href="https://shritech.digital" />
         <EnhancedSEO />
         <link rel="icon" href="/logo-mark.svg" />
       </head>
@@ -97,3 +103,4 @@ export default function RootLayout({
     </html>
   )
 }
+
