@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: '%s | Shriram Tech'
   },
   description:
-    'Expert AI/ML Developer in India with 5+ years experience. Specializing in WhatsApp Business API, intelligent chatbots, FastAPI, Python & Next.js development. Transform your business with custom AI solutions that reduce costs by 70% and improve efficiency. Free consultation available.',
+    'Expert AI/ML developer with 5+ years experience. WhatsApp Business API, chatbots, FastAPI, Python & Next.js. Reduce costs 70%, improve efficiency. Free consultation.',
   keywords: [
     // Primary keywords
     'AI developer India', 'ML developer India', 'WhatsApp Business API expert India', 'AI consultant India',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: 'Shriram Tech Solutions',
     title: 'AI/ML Developer India - Shriram Tech Solutions',
     description:
-      'Expert AI/ML Developer in India with 5+ years experience. Specializing in WhatsApp Business API, intelligent chatbots, FastAPI, Python & Next.js development. Transform your business with custom AI solutions.',
+      'Expert AI/ML developer with 5+ years experience. WhatsApp Business API, chatbots, FastAPI, Python & Next.js. Reduce costs 70%, improve efficiency. Free consultation.',
     images: [
       {
         url: '/og-image.svg',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI/ML Developer India - Shriram Tech Solutions',
     description:
-      'Expert AI/ML Developer in India with 5+ years experience in WhatsApp Business API, intelligent chatbots, FastAPI, Python & Next.js development.',
+      'Expert AI/ML developer with 5+ years experience. WhatsApp Business API, chatbots, FastAPI, Python & Next.js. Reduce costs 70%, improve efficiency.',
     images: ['/og-image.svg'],
     site: '@ShriramTechSol',
     creator: '@ShriramTechSol',
