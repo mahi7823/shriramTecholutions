@@ -33,21 +33,21 @@ const faqData: FAQItem[] = [
   {
     question: 'What AI/ML services do you offer?',
     answer:
-      'We offer comprehensive AI/ML solutions including intelligent chatbots, document processing automation, computer vision applications, predictive analytics, and custom machine learning models. Our services are tailored for businesses looking to automate processes and improve efficiency.',
+      'We offer comprehensive AI/ML solutions including intelligent chatbots with natural language processing, automated document processing with 95% accuracy, computer vision applications for quality control and inspection, predictive analytics for business forecasting, custom machine learning models for specific industry needs, and conversational AI for customer service automation. Our services are tailored for businesses looking to automate processes, improve efficiency, and gain competitive advantages through cutting-edge AI technology.',
     category: 'AI/ML Services',
     icon: Code,
   },
   {
     question: 'How accurate are your AI solutions?',
     answer:
-      'Our AI solutions achieve 95%+ accuracy rates. For document processing, we achieve 95% accuracy in data extraction. Chatbots handle 80% of customer queries automatically. Computer vision solutions achieve 96% accuracy in visual inspection tasks.',
+      'Our AI solutions achieve industry-leading accuracy rates: 95%+ for document processing and data extraction, 96% for computer vision quality control applications, 90%+ for predictive analytics models, and 85-90% for conversational AI chatbots. We continuously monitor and improve accuracy through machine learning model retraining, data quality optimization, and performance analytics. Our accuracy rates are validated through extensive testing and real-world deployment across various industries.',
     category: 'AI/ML Services',
     icon: Award,
   },
   {
     question: 'What technologies do you use for AI development?',
     answer:
-      'We use cutting-edge technologies including Python, FastAPI, TensorFlow, OpenAI GPT models, spaCy for NLP, OpenCV for computer vision, and custom machine learning algorithms. Our tech stack is chosen based on project requirements for optimal performance.',
+      'We use cutting-edge technologies including Python for core development, FastAPI for high-performance APIs, TensorFlow and PyTorch for deep learning models, OpenAI GPT models for natural language processing, spaCy and NLTK for advanced NLP tasks, OpenCV and TensorFlow Lite for computer vision applications, Redis for caching and session management, PostgreSQL for data storage, and Docker for containerization. Our tech stack is carefully chosen based on project requirements, scalability needs, and performance optimization for each specific use case.',
     category: 'AI/ML Services',
     icon: Zap,
   },
@@ -204,6 +204,69 @@ const faqData: FAQItem[] = [
       'We implement comprehensive backup strategies including automated daily backups, cloud redundancy, failover systems, and disaster recovery plans. Your AI systems are protected against data loss with 99.9% uptime guarantee and rapid recovery procedures.',
     category: 'Technical Questions',
     icon: Shield,
+  },
+  {
+    question: 'How do you handle data privacy and GDPR compliance?',
+    answer:
+      'We implement strict data privacy measures including data anonymization, encryption at rest and in transit, role-based access controls, and compliance with GDPR, Indian data protection regulations, and industry-specific privacy requirements. We conduct regular security audits, provide data processing agreements, and ensure all AI models are trained on anonymized data while maintaining performance accuracy.',
+    category: 'Implementation & Support',
+    icon: Shield,
+  },
+  {
+    question: 'Can your AI solutions integrate with existing ERP and CRM systems?',
+    answer:
+      'Yes, we specialize in seamless integration with popular ERP systems like SAP, Oracle, and Microsoft Dynamics, as well as CRM platforms including Salesforce, HubSpot, and Zoho. Our AI solutions can extract data, automate workflows, and provide intelligent insights within your existing business infrastructure without disrupting current operations.',
+    category: 'Implementation & Support',
+    icon: Code,
+  },
+  {
+    question: 'What is the typical ROI timeline for AI implementation?',
+    answer:
+      'Most clients see positive ROI within 3-6 months of implementation. Document processing solutions typically show 60-80% cost savings within 2-3 months. Chatbots reduce customer service costs by 70% within the first month. Computer vision quality control shows 40-60% defect reduction within 4-6 weeks. We provide detailed ROI tracking and monthly performance reports.',
+    category: 'Pricing & Costs',
+    icon: Award,
+  },
+  {
+    question: 'How do you ensure AI models remain accurate over time?',
+    answer:
+      'We implement continuous learning systems that monitor model performance, retrain models with new data, and adapt to changing business conditions. Our AI models include drift detection, automated retraining pipelines, and performance monitoring dashboards. We also provide regular model updates and optimization to maintain peak accuracy and relevance.',
+    category: 'Technical Questions',
+    icon: Zap,
+  },
+  {
+    question: 'What industries have you successfully implemented AI solutions for?',
+    answer:
+      'We have successfully implemented AI solutions across manufacturing (quality control, predictive maintenance), healthcare (diagnostic assistance, patient data processing), retail (inventory optimization, customer behavior analysis), legal services (document review, contract analysis), real estate (property valuation, market analysis), and e-commerce (personalization, fraud detection). Each solution is customized to industry-specific requirements and regulatory compliance.',
+    category: 'AI/ML Services',
+    icon: Code,
+  },
+  {
+    question: 'How do you handle multilingual support in AI chatbots?',
+    answer:
+      'Our AI chatbots support multiple languages including Hindi, English, Gujarati, Marathi, Tamil, Telugu, and other regional Indian languages. They use advanced NLP models for language detection, translation, and context-aware responses. The chatbots can seamlessly switch between languages based on user preference and maintain conversation context across language changes.',
+    category: 'AI/ML Services',
+    icon: MessageCircle,
+  },
+  {
+    question: 'What security measures do you implement for AI systems?',
+    answer:
+      'We implement enterprise-grade security including end-to-end encryption, secure API authentication, data anonymization, regular security audits, penetration testing, and compliance with international security standards. Our AI systems include intrusion detection, anomaly monitoring, and secure model deployment with version control and rollback capabilities.',
+    category: 'Implementation & Support',
+    icon: Shield,
+  },
+  {
+    question: 'Can you customize AI solutions for specific business processes?',
+    answer:
+      'Absolutely! We specialize in custom AI development tailored to your specific business processes, workflows, and industry requirements. Our team works closely with you to understand your unique challenges, design custom AI models, integrate with existing systems, and provide training for your team. We ensure the solution perfectly fits your business needs.',
+    category: 'Technical Questions',
+    icon: Code,
+  },
+  {
+    question: 'What support and maintenance services do you provide?',
+    answer:
+      'We provide comprehensive support including 24/7 system monitoring, regular maintenance updates, performance optimization, bug fixes, feature enhancements, and technical support. Our maintenance packages include proactive monitoring, automated backups, security updates, and dedicated support channels. We also offer training programs and documentation updates.',
+    category: 'Implementation & Support',
+    icon: Users,
   },
 ]
 

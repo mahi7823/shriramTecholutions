@@ -1,9 +1,18 @@
 [
   {
+    "id": "build-whatsapp-chatbot-fastapi",
+    "title": "Build a WhatsApp Chatbot with FastAPI — Step-by-Step Guide",
+    "excerpt": "Comprehensive developer guide to building production-ready WhatsApp chatbots using FastAPI and WhatsApp Business API. Includes webhook handling, LLM integration, and deployment strategies.",
+    "readTime": "25 min read",
+    "category": "Technical Guide",
+    "publishedAt": "2024-01-20",
+    "slug": "/blog/build-whatsapp-chatbot-fastapi"
+  },
+  {
     "id": "whatsapp-api-restaurant-success",
     "title": "How WhatsApp Business API Increased Restaurant Orders by 300%",
     "excerpt": "Delhi restaurant chain transformed ordering with AI-powered WhatsApp automation, reducing errors by 45% and tripling order volume.",
-    "readTime": "8 min read",
+    "readTime": "15 min read",
     "category": "Case Study",
     "publishedAt": "2024-01-15",
     "slug": "/blog/whatsapp-api-restaurant-success"
@@ -12,7 +21,7 @@
     "id": "ai-document-processing-guide",
     "title": "Complete Guide to AI Document Processing for Indian Businesses",
     "excerpt": "Step-by-step implementation guide for automated document processing using Python, spaCy, and NLP. Achieve 95% accuracy in data extraction.",
-    "readTime": "12 min read",
+    "readTime": "18 min read",
     "category": "Technical Guide",
     "publishedAt": "2024-01-10",
     "slug": "/blog/ai-document-processing-guide"
@@ -21,7 +30,7 @@
     "id": "fastapi-vs-django-ai",
     "title": "FastAPI vs Django for AI Development: Complete Comparison 2024",
     "excerpt": "Comprehensive analysis of FastAPI and Django for AI/ML projects. Performance benchmarks, scalability, and real-world implementation examples.",
-    "readTime": "10 min read",
+    "readTime": "20 min read",
     "category": "Technical Comparison",
     "publishedAt": "2024-01-05",
     "slug": "/blog/fastapi-vs-django-ai"
@@ -30,10 +39,55 @@
     "id": "cost-effective-ai-small-business",
     "title": "Cost-Effective AI Solutions for Small Businesses in India",
     "excerpt": "Practical AI implementation strategies for SMEs with limited budgets. ROI analysis, implementation roadmap, and affordable technology stack.",
-    "readTime": "9 min read",
+    "readTime": "15 min read",
     "category": "Business Strategy",
     "publishedAt": "2024-01-01",
     "slug": "/blog/cost-effective-ai-small-business"
+  },
+  {
+    "id": "ai-computer-vision-manufacturing-india",
+    "title": "AI Computer Vision Solutions for Indian Manufacturing Industry",
+    "excerpt": "Transform manufacturing with AI computer vision for quality control. 96% accuracy in defect detection, 60% cost reduction. Complete implementation guide.",
+    "readTime": "18 min read",
+    "category": "Industry Solutions",
+    "publishedAt": "2024-02-01",
+    "slug": "/blog/ai-computer-vision-manufacturing-india"
+  },
+  {
+    "id": "predictive-analytics-retail-india",
+    "title": "Predictive Analytics Transforming Indian Retail: AI-Driven Success Stories",
+    "excerpt": "Discover how Indian retailers use AI predictive analytics to increase sales by 45%, reduce inventory costs by 30%. Real case studies and implementation guide.",
+    "readTime": "16 min read",
+    "category": "Retail AI",
+    "publishedAt": "2024-02-05",
+    "slug": "/blog/predictive-analytics-retail-india"
+  },
+  {
+    "id": "nlp-chatbots-indian-languages",
+    "title": "NLP Chatbots for Indian Languages: Complete Implementation Guide",
+    "excerpt": "Build multilingual chatbots for Hindi, Tamil, Telugu, and other Indian languages. Learn NLP techniques, language detection, and cultural adaptation for better user engagement.",
+    "readTime": "20 min read",
+    "category": "Technical Guide",
+    "publishedAt": "2024-02-10",
+    "slug": "/blog/nlp-chatbots-indian-languages"
+  },
+  {
+    "id": "ai-healthcare-india",
+    "title": "AI in Healthcare India: Transforming Patient Care with Intelligent Solutions",
+    "excerpt": "Discover how AI is revolutionizing healthcare in India. From diagnostic assistance to patient monitoring, learn about AI applications that improve accuracy and accessibility.",
+    "readTime": "22 min read",
+    "category": "Healthcare Innovation",
+    "publishedAt": "2024-02-15",
+    "slug": "/blog/ai-healthcare-india"
+  },
+  {
+    "id": "ai-education-india",
+    "title": "AI in Education India: Revolutionizing Learning with Intelligent Solutions",
+    "excerpt": "Discover how AI is transforming education in India. From personalized learning to automated assessment, learn about AI applications that improve student outcomes and teaching efficiency.",
+    "readTime": "20 min read",
+    "category": "Education Innovation",
+    "publishedAt": "2024-02-20",
+    "slug": "/blog/ai-education-india"
   }
 ]
 

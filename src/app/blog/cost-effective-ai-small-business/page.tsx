@@ -28,7 +28,7 @@ export default function CostEffectiveAISmallBusiness() {
               Business Strategy
             </span>
             <div className="text-gray-500 text-sm">
-              Published on January 1, 2024 • 9 min read
+              Published on January 1, 2024 • 15 min read
             </div>
           </div>
           

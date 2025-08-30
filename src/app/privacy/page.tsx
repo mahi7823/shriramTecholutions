@@ -17,20 +17,8 @@ export default function PrivacyPolicyPage() {
       icon: FileText,
       content: [
         {
-          subtitle: "Contact Information",
-          text: "When you contact us through our website, WhatsApp, email, or phone, we collect your name, email address, phone number, and any information you provide in your messages."
-        },
-        {
-          subtitle: "Project Information",
-          text: "During consultations and project development, we may collect business requirements, technical specifications, and other project-related information necessary to provide our AI/ML services."
-        },
-        {
-          subtitle: "Website Usage Data",
-          text: "We collect standard web analytics data including IP addresses, browser type, device information, and website usage patterns to improve our services and user experience."
-        },
-        {
-          subtitle: "WhatsApp Business API Data",
-          text: "When we develop WhatsApp Business API solutions for clients, we handle message data, contact information, and business communications as per our service agreements."
+          subtitle: "Personal & Business Data",
+          text: "We collect contact details, project requirements, usage data, and WhatsApp Business API data necessary to provide our services and improve user experience."
         }
       ]
     },
@@ -39,20 +27,8 @@ export default function PrivacyPolicyPage() {
       icon: Users,
       content: [
         {
-          subtitle: "Service Delivery",
-          text: "We use your information to provide AI/ML development services, WhatsApp Business API integration, and ongoing technical support."
-        },
-        {
-          subtitle: "Communication",
-          text: "We use your contact information to respond to inquiries, provide project updates, and deliver customer support."
-        },
-        {
-          subtitle: "Service Improvement",
-          text: "We analyze usage patterns and feedback to improve our services, develop new solutions, and enhance user experience."
-        },
-        {
-          subtitle: "Legal Compliance",
-          text: "We may use your information to comply with legal obligations, resolve disputes, and enforce our service agreements."
+          subtitle: "Service & Support",
+          text: "We use your information to deliver AI/ML services, provide technical support, communicate with you about projects, improve our offerings, and comply with legal obligations."
         }
       ]
     },
@@ -61,20 +37,8 @@ export default function PrivacyPolicyPage() {
       icon: Shield,
       content: [
         {
-          subtitle: "Encryption",
-          text: "All data transmission is protected using industry-standard SSL/TLS encryption. Client project data is stored in encrypted databases with restricted access."
-        },
-        {
-          subtitle: "Access Controls",
-          text: "We implement strict access controls ensuring only authorized personnel can access your information on a need-to-know basis."
-        },
-        {
-          subtitle: "Regular Security Audits",
-          text: "Our systems undergo regular security assessments and updates to protect against vulnerabilities and maintain data integrity."
-        },
-        {
-          subtitle: "Client Data Isolation",
-          text: "Each client's data is isolated and protected with separate security protocols to prevent unauthorized access or data mixing."
+          subtitle: "Enterprise-Grade Security",
+          text: "We protect your data with SSL/TLS encryption, strict access controls, regular security audits, and client data isolation to ensure maximum protection of your information."
         }
       ]
     },
@@ -83,20 +47,8 @@ export default function PrivacyPolicyPage() {
       icon: Eye,
       content: [
         {
-          subtitle: "No Third-Party Sales",
-          text: "We never sell, rent, or trade your personal information to third parties for marketing or commercial purposes."
-        },
-        {
-          subtitle: "Service Providers",
-          text: "We may share information with trusted service providers (hosting, analytics) who assist in delivering our services under strict confidentiality agreements."
-        },
-        {
-          subtitle: "Legal Requirements",
-          text: "We may disclose information when required by law, court order, or to protect our rights and the safety of our users."
-        },
-        {
-          subtitle: "Business Transfers",
-          text: "In the event of a merger, acquisition, or business transfer, your information may be transferred as part of that transaction with continued privacy protection."
+          subtitle: "Limited Disclosure",
+          text: "We never sell your data to third parties. Information is only shared with trusted service providers, for legal compliance, or during business transfers with continued privacy protection."
         }
       ]
     }
@@ -136,11 +88,9 @@ export default function PrivacyPolicyPage() {
         {/* SEO copy to improve text/code ratio and keyword relevance */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
           <p className="text-sm text-gray-600">
-            Shriram Tech Solutions is committed to protecting your privacy when using our AI/ML development services and 
-            WhatsApp Business API solutions. As experienced technology professionals, we understand the importance of data 
-            security in AI implementations, chatbot development, and business automation projects. This comprehensive privacy 
-            policy explains our data handling practices for all services including FastAPI development, Python-based AI solutions, 
-            and Next.js applications.
+            Shriram Tech Solutions is committed to protecting your privacy across all our services. We implement robust data 
+            security for AI implementations, WhatsApp Business solutions, and technical development projects. This policy 
+            outlines our data practices for all clients and services.
           </p>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -216,15 +166,7 @@ export default function PrivacyPolicyPage() {
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                  <span><strong>Contact Data:</strong> Retained for business relationship duration plus 3 years</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                  <span><strong>Project Data:</strong> Retained per service agreement terms</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                  <span><strong>Analytics:</strong> Anonymized data retained for service improvement</span>
+                  <span><strong>All Data:</strong> Retained as required for service delivery and legal compliance, with regular reviews to minimize data storage duration</span>
                 </li>
               </ul>
             </div>
@@ -238,28 +180,17 @@ export default function PrivacyPolicyPage() {
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Cookies & Tracking Technologies</h2>
             
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 gap-8">
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">Essential Cookies</h3>
-                <p className="text-gray-700 mb-4">Required for basic website functionality, security, and user authentication.</p>
-                <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium inline-block">
-                  Always Active
-                </div>
-              </div>
-              
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">Analytics Cookies</h3>
-                <p className="text-gray-700 mb-4">Help us understand website usage and improve user experience through anonymized data.</p>
-                <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium inline-block">
-                  Optional
-                </div>
-              </div>
-              
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">Performance Cookies</h3>
-                <p className="text-gray-700 mb-4">Optimize website performance and loading times for better user experience.</p>
-                <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium inline-block">
-                  Optional
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Cookie Usage</h3>
+                <p className="text-gray-700 mb-4">We use essential cookies for website functionality and security, and optional analytics/performance cookies to improve user experience. You can control optional cookies through your browser settings.</p>
+                <div className="flex gap-3">
+                  <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium inline-block">
+                    Essential: Always Active
+                  </div>
+                  <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium inline-block">
+                    Analytics/Performance: Optional
+                  </div>
                 </div>
               </div>
             </div>

@@ -12,23 +12,33 @@ export default function AboutPage() {
   const milestones = [
     {
       year: '2019',
-      title: 'Founded',
-      description: 'Started with a vision to democratize AI/ML technology for businesses of all sizes'
+      title: 'Foundation & Vision',
+      description: 'Founded Shriram Tech Solutions with a mission to democratize AI/ML technology for Indian businesses, starting with small-scale automation projects and quickly expanding to comprehensive AI solutions'
+    },
+    {
+      year: '2020',
+      title: 'AI Expertise Development',
+      description: 'Developed core competencies in machine learning, natural language processing, and computer vision, delivering our first major AI implementations for document processing and predictive analytics'
     },
     {
       year: '2021',
-      title: 'WhatsApp Business API Specialist',
-      description: 'Became certified WhatsApp Business API partner, helping businesses automate customer communication'
+      title: 'WhatsApp Business API Certification',
+      description: 'Became certified WhatsApp Business API partner, revolutionizing customer communication for restaurants, e-commerce, and service businesses with intelligent chatbot solutions'
     },
     {
       year: '2022',
-      title: '50+ Projects Delivered',
-      description: 'Successfully delivered AI/ML solutions across diverse industries with 98% success rate'
+      title: '50+ Successful Projects',
+      description: 'Reached milestone of 50+ delivered AI/ML projects across diverse industries including manufacturing, healthcare, retail, and hospitality with consistent 98% success rate'
+    },
+    {
+      year: '2023',
+      title: 'Advanced AI Solutions',
+      description: 'Expanded capabilities to include computer vision for quality control, advanced NLP for multilingual support, and sophisticated predictive models for business intelligence'
     },
     {
       year: '2024',
-      title: 'Industry Recognition',
-      description: 'Recognized as a leading AI/ML development expert with proven ROI for clients'
+      title: 'Industry Leadership',
+      description: 'Established as a leading AI/ML development expert with proven ROI improvements, serving clients globally while maintaining focus on innovative solutions for the Indian market'
     }
   ]
 
@@ -116,13 +126,32 @@ export default function AboutPage() {
       <section className="py-20 bg-white dark:bg-gray-800 transition-colors duration-200">
         {/* SEO copy to strengthen content depth and keyword coverage */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-          <p className="text-sm text-gray-600 dark:text-gray-300">
-            Shriram Tech Solutions combines deep AI/ML expertise with WhatsApp Business API specialization to deliver 
-            technology solutions that drive measurable business results. Our experienced developers use FastAPI, Python, 
-            Next.js, and modern cloud platforms to build intelligent chatbots, document processing AI, computer vision systems, 
-            and predictive analytics. From small businesses to enterprises, we focus on implementations that reduce costs, 
-            increase revenue, and improve operational efficiency through proven AI technology.
-          </p>
+          <div className="space-y-4 text-gray-600 dark:text-gray-300">
+            <p>
+              Founded in 2019, Shriram Tech Solutions has emerged as a leading AI/ML development company specializing in 
+              intelligent business automation and WhatsApp Business API integration. Our journey began with a simple yet 
+              ambitious vision: to democratize artificial intelligence technology and make it accessible to businesses of all 
+              sizes across India and globally.
+            </p>
+            <p>
+              Over the past five years, we have successfully delivered 50+ AI/ML projects with a remarkable 98% success rate, 
+              helping businesses achieve an average ROI improvement of 300%. Our expertise spans across multiple domains including 
+              natural language processing, computer vision, predictive analytics, and conversational AI development using 
+              cutting-edge technologies like Python, FastAPI, TensorFlow, and modern cloud platforms.
+            </p>
+            <p>
+              As certified WhatsApp Business API partners, we have revolutionized how businesses communicate with their customers, 
+              implementing intelligent chatbots and automated messaging systems that have helped restaurants increase orders by 
+              300%, manufacturing companies improve quality control through AI-powered vision systems, and SMEs reduce operational 
+              costs by up to 70% through strategic automation.
+            </p>
+            <p>
+              Our technical excellence is built on a foundation of continuous learning and adaptation to emerging technologies. 
+              We leverage modern frameworks like Next.js for responsive web applications, implement robust FastAPI backends for 
+              high-performance AI services, and utilize advanced machine learning libraries including scikit-learn, spaCy, and 
+              OpenCV to deliver solutions that consistently achieve 95%+ accuracy rates in real-world applications.
+            </p>
+          </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -131,12 +160,22 @@ export default function AboutPage() {
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
                 To democratize artificial intelligence and machine learning technology by making it accessible, 
                 practical, and profitable for businesses of all sizes. We believe that every business should have 
-                the opportunity to leverage cutting-edge AI technology to improve their operations and customer experience.
+                the opportunity to leverage cutting-edge AI technology to improve their operations and customer experience. 
+                Our mission extends beyond just delivering technical solutions – we aim to be strategic partners who 
+                understand business challenges and translate them into intelligent, automated solutions that drive growth.
               </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
                 Our specialized focus on WhatsApp Business API integration allows businesses to connect with their 
                 customers in the most natural and effective way possible, while our AI/ML expertise ensures these 
-                interactions are intelligent, efficient, and scalable.
+                interactions are intelligent, efficient, and scalable. We have mastered the art of creating conversational 
+                experiences that feel natural while being powered by sophisticated AI algorithms.
+              </p>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
+                What sets us apart is our holistic approach to AI implementation. We don't just build isolated AI models; 
+                we create comprehensive ecosystems that integrate seamlessly with existing business processes, provide 
+                actionable insights through advanced analytics, and scale effortlessly as businesses grow. Our solutions 
+                are designed with the Indian market in mind, understanding local business practices, regulatory requirements, 
+                and customer behavior patterns while meeting international quality standards.
               </p>
               <div className="flex items-center space-x-4">
                 <Award className="w-8 h-8 text-blue-600 dark:text-blue-400" />
@@ -207,13 +246,113 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Industry Experience Section */}
+      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Industry Experience & Specializations</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+              Our diverse portfolio spans multiple industries, each benefiting from tailored AI solutions that address 
+              specific business challenges and unlock new opportunities for growth and efficiency.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Restaurant & Food Service</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Automated ordering systems, inventory management AI, and WhatsApp-based customer service that increased 
+                average orders by 300% for restaurant clients.
+              </p>
+              <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                <li>• Intelligent menu recommendations</li>
+                <li>• Automated order processing</li>
+                <li>• Customer feedback analysis</li>
+                <li>• Inventory optimization AI</li>
+              </ul>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Manufacturing & Quality Control</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Computer vision systems for defect detection, predictive maintenance AI, and production optimization 
+                solutions achieving 95%+ accuracy in quality control processes.
+              </p>
+              <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                <li>• Automated quality inspection</li>
+                <li>• Predictive maintenance alerts</li>
+                <li>• Production line optimization</li>
+                <li>• Real-time performance monitoring</li>
+              </ul>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Healthcare & Document Processing</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                AI-powered document analysis, medical record processing, and intelligent form automation that reduced 
+                processing time by 80% while maintaining high accuracy standards.
+              </p>
+              <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                <li>• Medical document digitization</li>
+                <li>• Automated data extraction</li>
+                <li>• Compliance checking systems</li>
+                <li>• Patient data management</li>
+              </ul>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">E-commerce & Retail</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Personalized recommendation engines, customer behavior analysis, and automated customer support 
+                systems that improved sales conversion rates by 250%.
+              </p>
+              <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                <li>• Product recommendation AI</li>
+                <li>• Customer segmentation</li>
+                <li>• Automated chat support</li>
+                <li>• Inventory demand forecasting</li>
+              </ul>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Financial Services</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Risk assessment algorithms, fraud detection systems, and automated compliance monitoring that 
+                enhanced security while reducing manual oversight by 60%.
+              </p>
+              <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                <li>• Fraud detection algorithms</li>
+                <li>• Credit risk assessment</li>
+                <li>• Compliance automation</li>
+                <li>• Customer verification AI</li>
+              </ul>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Education & Training</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Personalized learning platforms, automated grading systems, and intelligent content recommendation 
+                engines that improved student engagement by 180%.
+              </p>
+              <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                <li>• Adaptive learning systems</li>
+                <li>• Automated assessment tools</li>
+                <li>• Performance analytics</li>
+                <li>• Content personalization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Expertise Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Expertise</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Core Technical Expertise</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Deep technical knowledge combined with business acumen to deliver solutions that drive real results
+              Deep technical knowledge combined with business acumen to deliver solutions that drive real results and 
+              measurable improvements in operational efficiency, customer satisfaction, and revenue growth.
             </p>
           </div>
           
@@ -395,9 +534,11 @@ export default function AboutPage() {
       <section className="py-20 bg-white dark:bg-gray-800 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Development Process</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              A systematic approach that ensures project success and delivers solutions that exceed expectations
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Proven Development Methodology</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+              Our systematic, client-focused approach ensures project success through careful planning, agile development, 
+              and continuous optimization. Every project follows our proven methodology that has delivered consistent 
+              results across 50+ implementations with a 98% success rate.
             </p>
           </div>
           
@@ -406,31 +547,35 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Discovery & Analysis</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Deep dive into your business requirements, existing systems, and growth objectives to design optimal AI solutions.
+                Comprehensive business analysis including stakeholder interviews, process mapping, data audit, and 
+                competitive landscape review to identify the most impactful AI implementation opportunities aligned with your strategic goals.
               </p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Solution Design</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Solution Architecture & Design</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Create detailed technical architecture, user experience flows, and implementation roadmap with clear milestones.
+                Detailed technical architecture design including AI model selection, data pipeline architecture, integration 
+                specifications, security protocols, and scalability planning with clear project milestones and success metrics.
               </p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Development & Testing</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Agile Development & Optimization</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Agile development with continuous testing, quality assurance, and performance optimization throughout the process.
+                Iterative development using modern DevOps practices, continuous integration/deployment, comprehensive testing 
+                including unit tests, integration tests, and performance benchmarking to ensure optimal solution quality.
               </p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Deployment & Support</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Deployment & Ongoing Partnership</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Seamless deployment with comprehensive training, documentation, and ongoing technical support for your team.
+                Professional deployment with zero-downtime migration, comprehensive team training, detailed documentation, 
+                24/7 monitoring setup, and continuous optimization support to ensure long-term success and ROI maximization.
               </p>
             </div>
           </div>

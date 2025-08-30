@@ -28,7 +28,7 @@ export default function WhatsAppRestaurantCaseStudy() {
               Case Study
             </span>
             <div className="text-gray-500 text-sm">
-              Published on January 15, 2024 • 8 min read
+              Published on January 15, 2024 • 15 min read
             </div>
           </div>
           
@@ -54,17 +54,51 @@ export default function WhatsAppRestaurantCaseStudy() {
             </ul>
           </div>
 
-          <h2>The Challenge</h2>
+          <h2>The Challenge: Traditional Ordering System Breakdown</h2>
           <p>
-            A popular Delhi restaurant chain with 20 locations was struggling with phone-based ordering:
+            Meet FoodExpress, a popular Delhi restaurant chain with 20 locations that had built a strong reputation for authentic North Indian cuisine over 15 years. Despite their culinary success, they faced a critical operational crisis that threatened their growth and customer satisfaction.
           </p>
+          
+          <h3>The Crisis That Sparked Change</h3>
+          <p>
+            During the COVID-19 pandemic, FoodExpress saw delivery orders surge by 400%, but their phone-based ordering system couldn't handle the volume. What started as a growth opportunity quickly became an operational nightmare:
+          </p>
+          
+          <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-6 mb-6">
+            <h4 className="font-semibold text-red-800 dark:text-red-200 mb-3">Critical Issues Identified:</h4>
+            <ul className="text-red-700 dark:text-red-300 space-y-2">
+              <li><strong>Order Congestion:</strong> Peak hours (7-9 PM) saw 200+ simultaneous calls, with 60% going unanswered</li>
+              <li><strong>Catastrophic Error Rate:</strong> 45% of phone orders contained mistakes in items, quantities, or delivery addresses</li>
+              <li><strong>Staff Burnout:</strong> Employees working 12-hour shifts, high turnover rate (40% annually)</li>
+              <li><strong>Revenue Hemorrhage:</strong> ₹2.5 lakhs daily in lost revenue from missed calls and cancellations</li>
+              <li><strong>Brand Damage:</strong> 2.1-star rating on Google due to service issues and delayed deliveries</li>
+              <li><strong>Operational Chaos:</strong> Kitchen receiving incorrect orders, leading to 30% food waste</li>
+            </ul>
+          </div>
+          
+          <h3>The Tipping Point</h3>
+          <p>
+            The final straw came during Diwali 2023, when the restaurant received over 800 order attempts in one evening but could only process 180 successfully. The remaining 620 potential customers either couldn't get through or experienced order errors, resulting in ₹4.2 lakhs in lost revenue in a single night.
+          </p>
+          
+          <p>
+            "We knew we had to do something radical," recalls Rajesh Kumar, Operations Manager. "Our reputation was suffering, staff were quitting, and we were losing customers to competitors who had better ordering systems. We needed a solution that could scale with our growth."
+          </p>
+          
+          <h3>Market Research and Decision Making</h3>
+          <p>
+            FoodExpress considered several options including hiring more staff, upgrading phone systems, and partnering with third-party delivery platforms. However, each option had significant drawbacks:
+          </p>
+          
           <ul>
-            <li><strong>Order Congestion:</strong> Peak hours saw 200+ calls, with many going unanswered</li>
-            <li><strong>High Error Rate:</strong> 45% of phone orders contained mistakes in items, quantities, or addresses</li>
-            <li><strong>Staff Overload:</strong> Employees were overwhelmed managing orders during rush hours</li>
-            <li><strong>Lost Revenue:</strong> Missed calls meant lost customers and revenue</li>
-            <li><strong>Customer Frustration:</strong> Long wait times and order errors damaged reputation</li>
+            <li><strong>Additional Staff:</strong> Would cost ₹15 lakhs annually but wouldn't solve fundamental system issues</li>
+            <li><strong>Phone System Upgrade:</strong> Limited scalability and still prone to human errors</li>
+            <li><strong>Third-party Platforms:</strong> 20-30% commission rates would severely impact profit margins</li>
           </ul>
+          
+          <p>
+            After researching modern solutions, they discovered that WhatsApp Business API could provide a scalable, customer-friendly ordering platform that their customers were already familiar with - 89% of their customer base actively used WhatsApp daily.
+          </p>
 
           <h2>The Solution: AI-Powered WhatsApp Automation</h2>
           <p>
