@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'WhatsApp Chatbot with FastAPI: Complete Developer Guide',
-  description: 'Step-by-step guide to build a production WhatsApp chatbot with FastAPI, Python, and the WhatsApp Business API. Includes auth, deployment, and scaling tips.',
+  description: 'Complete guide to build production WhatsApp chatbots with FastAPI & Python. Includes WhatsApp Business API integration, auth, deployment & scaling.',
   keywords: [
     'WhatsApp chatbot FastAPI', 'build WhatsApp chatbot with FastAPI', 'WhatsApp Business API python example',
     'deploy WhatsApp bot to production', 'FastAPI webhook', 'WhatsApp API integration', 'chatbot development',

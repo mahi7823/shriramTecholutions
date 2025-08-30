@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'AI Education India: Revolutionizing Learning Solutions',
-  description: 'Discover how AI transforms education in India. From personalized learning to automated assessment, learn about AI applications.',
+  description: 'Discover how AI transforms education in India. From personalized learning to automated assessment, explore AI applications improving student outcomes.',
   keywords: [
     'AI education India', 'personalized learning AI', 'educational technology', 'AI tutoring',
     'automated assessment AI', 'adaptive learning', 'education innovation India', 'AI teaching assistant',

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'FastAPI vs Django for AI Development 2024',
-  description: 'Comprehensive FastAPI & Django analysis for AI/ML projects. Performance benchmarks & real-world examples for Indian developers.',
+  description: 'Comprehensive FastAPI & Django analysis for AI/ML projects. Performance benchmarks, scalability comparison & real-world examples for developers.',
   keywords: [
     'FastAPI vs Django AI', 'Python web framework comparison', 'AI development framework',
     'machine learning API development', 'FastAPI performance benchmarks', 'Django AI projects',

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'AI Healthcare India: Transforming Patient Care Solutions',
-  description: 'Discover how AI revolutionizes healthcare in India. Learn about diagnostic AI, patient monitoring, and applications improving accuracy.',
+  description: 'Discover how AI revolutionizes healthcare in India. Learn about diagnostic AI, patient monitoring, telemedicine & medical applications for improved accuracy.',
   keywords: [
     'AI healthcare India', 'medical AI applications', 'diagnostic AI', 'patient monitoring AI',
     'healthcare automation India', 'medical imaging AI', 'telemedicine AI', 'healthcare technology',

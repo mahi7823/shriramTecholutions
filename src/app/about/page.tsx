@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Layout from '@/components/layout/Layout'
-import { Award, Code, Users, Zap, CheckCircle, MessageCircle, Phone, Mail } from 'lucide-react'
+import { Award, Code, Users, Zap, CheckCircle, MessageCircle, Phone, Mail, Shield } from 'lucide-react'
 import { contactInfo, generateWhatsAppLink, generateEmailLink, generatePhoneLink } from '@/config/contactInfo'
 
 export const metadata: Metadata = {
@@ -577,6 +577,409 @@ export default function AboutPage() {
                 Professional deployment with zero-downtime migration, comprehensive team training, detailed documentation, 
                 24/7 monitoring setup, and continuous optimization support to ensure long-term success and ROI maximization.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Success Stories Section */}
+      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Client Success Stories & Case Studies</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+              Real-world examples of how our AI/ML solutions and WhatsApp Business API integrations have transformed 
+              businesses across various industries, delivering measurable results and significant ROI improvements.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Restaurant Chain Transformation</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                A leading Delhi-based restaurant chain with 15 locations was struggling with order management, 
+                customer communication, and operational efficiency. Their manual processes were causing delays, 
+                order errors, and customer dissatisfaction.
+              </p>
+              <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mb-4">
+                <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">Our Solution:</h4>
+                <ul className="text-green-700 dark:text-green-300 text-sm space-y-1">
+                  <li>• Intelligent WhatsApp chatbot for automated ordering</li>
+                  <li>• AI-powered menu recommendation system</li>
+                  <li>• Real-time inventory management integration</li>
+                  <li>• Customer feedback analysis and sentiment tracking</li>
+                </ul>
+              </div>
+              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Results Achieved:</h4>
+                <ul className="text-blue-700 dark:text-blue-300 text-sm space-y-1">
+                  <li>• 300% increase in average order value</li>
+                  <li>• 45% reduction in order processing time</li>
+                  <li>• 80% improvement in customer satisfaction scores</li>
+                  <li>• 60% reduction in operational costs</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Manufacturing Quality Control Revolution</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                A mid-sized manufacturing company in Pune was facing quality control challenges with their 
+                production line, resulting in high defect rates, customer returns, and significant financial losses.
+              </p>
+              <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mb-4">
+                <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">Our Solution:</h4>
+                <ul className="text-green-700 dark:text-green-300 text-sm space-y-1">
+                  <li>• Computer vision AI for automated defect detection</li>
+                  <li>• Real-time quality monitoring system</li>
+                  <li>• Predictive maintenance algorithms</li>
+                  <li>• Production line optimization analytics</li>
+                </ul>
+              </div>
+              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Results Achieved:</h4>
+                <ul className="text-blue-700 dark:text-blue-300 text-sm space-y-1">
+                  <li>• 96% accuracy in defect detection</li>
+                  <li>• 85% reduction in production defects</li>
+                  <li>• 70% decrease in quality control costs</li>
+                  <li>• 40% improvement in production efficiency</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Healthcare Document Processing</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                A healthcare provider in Mumbai was overwhelmed with manual document processing, leading to 
+                delays in patient care, billing errors, and compliance issues with regulatory requirements.
+              </p>
+              <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mb-4">
+                <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">Our Solution:</h4>
+                <ul className="text-green-700 dark:text-green-300 text-sm space-y-1">
+                  <li>• AI-powered document digitization system</li>
+                  <li>• Automated data extraction from medical records</li>
+                  <li>• Compliance checking and validation</li>
+                  <li>• Patient data management platform</li>
+                </ul>
+              </div>
+              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Results Achieved:</h4>
+                <ul className="text-blue-700 dark:text-blue-300 text-sm space-y-1">
+                  <li>• 95% accuracy in data extraction</li>
+                  <li>• 80% reduction in processing time</li>
+                  <li>• 90% decrease in billing errors</li>
+                  <li>• 100% compliance with regulations</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">E-commerce Growth Acceleration</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                An online retail platform was struggling with low conversion rates, poor customer engagement, 
+                and inefficient inventory management, limiting their growth potential in the competitive market.
+              </p>
+              <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mb-4">
+                <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">Our Solution:</h4>
+                <ul className="text-green-700 dark:text-green-300 text-sm space-y-1">
+                  <li>• Personalized product recommendation engine</li>
+                  <li>• Customer behavior analysis and segmentation</li>
+                  <li>• Automated customer support chatbot</li>
+                  <li>• Inventory demand forecasting system</li>
+                </ul>
+              </div>
+              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Results Achieved:</h4>
+                <ul className="text-blue-700 dark:text-blue-300 text-sm space-y-1">
+                  <li>• 250% increase in conversion rates</li>
+                  <li>• 180% improvement in customer engagement</li>
+                  <li>• 60% reduction in customer support costs</li>
+                  <li>• 40% improvement in inventory turnover</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team & Leadership Section */}
+      <section className="py-20 bg-white dark:bg-gray-800 transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Team & Leadership</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+              Meet the passionate professionals behind Shriram Tech Solutions - a team of experienced AI/ML engineers, 
+              business strategists, and technology innovators dedicated to transforming businesses through intelligent solutions.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Leadership & Vision</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                Our leadership team brings together decades of combined experience in artificial intelligence, 
+                machine learning, and business transformation. With backgrounds from leading technology companies 
+                and academic institutions, they provide strategic direction and technical expertise that drives 
+                innovation and ensures project success.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                The founding team's vision was clear from the beginning: to democratize AI technology and make 
+                it accessible to businesses of all sizes. This vision has guided our growth from a small startup 
+                to a recognized leader in AI/ML development, serving clients across India and internationally.
+              </p>
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-6 rounded-lg">
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Leadership Principles:</h4>
+                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <span><strong>Innovation First:</strong> Continuously exploring emerging technologies and methodologies</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-green-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <span><strong>Client Success:</strong> Every decision is made with client outcomes in mind</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <span><strong>Team Excellence:</strong> Investing in continuous learning and skill development</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-orange-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <span><strong>Ethical AI:</strong> Ensuring responsible and transparent AI development practices</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Technical Expertise</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                Our technical team consists of highly skilled AI/ML engineers, data scientists, software developers, 
+                and DevOps specialists. Each team member brings specialized expertise in their respective domains, 
+                creating a comprehensive skill set that enables us to tackle complex technical challenges.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                The team's expertise spans across multiple AI/ML domains including natural language processing, 
+                computer vision, predictive analytics, and conversational AI. This diverse knowledge base allows 
+                us to provide holistic solutions that address various business needs and technical requirements.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">AI/ML Engineers</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Specialized in deep learning, model optimization, and production deployment</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Data Scientists</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Expert in data analysis, feature engineering, and statistical modeling</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Software Developers</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Skilled in full-stack development, API integration, and system architecture</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">DevOps Specialists</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Expert in cloud deployment, CI/CD pipelines, and infrastructure management</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quality Assurance & Standards Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Quality Assurance & Industry Standards</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+              We maintain the highest standards of quality in all our deliverables, following industry best practices 
+              and implementing rigorous testing and validation processes to ensure optimal performance and reliability.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Development Standards</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                Our development process follows industry best practices and standards to ensure code quality, 
+                maintainability, and scalability. We implement comprehensive testing strategies and code review 
+                processes that guarantee robust and reliable solutions.
+              </p>
+              <div className="space-y-4">
+                <div className="border-l-4 border-blue-600 pl-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Code Quality Standards</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    Strict adherence to coding standards, comprehensive documentation, and regular code reviews 
+                    ensure maintainable and scalable codebases that can evolve with business needs.
+                  </p>
+                </div>
+                <div className="border-l-4 border-green-600 pl-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Testing Protocols</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    Multi-level testing including unit tests, integration tests, performance tests, and user 
+                    acceptance testing to validate functionality and performance under various conditions.
+                  </p>
+                </div>
+                <div className="border-l-4 border-purple-600 pl-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Security Measures</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    Comprehensive security testing, vulnerability assessments, and compliance with data protection 
+                    regulations to ensure client data and system security.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Performance & Reliability</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                We prioritize performance and reliability in all our solutions, implementing monitoring systems 
+                and optimization strategies that ensure consistent, high-quality service delivery.
+              </p>
+              <div className="space-y-4">
+                <div className="border-l-4 border-orange-600 pl-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Performance Monitoring</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    Real-time monitoring of system performance, response times, and resource utilization to 
+                    identify and resolve issues before they impact users.
+                  </p>
+                </div>
+                <div className="border-l-4 border-red-600 pl-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Reliability Engineering</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    Implementation of fault-tolerant architectures, backup systems, and disaster recovery 
+                    procedures to ensure continuous service availability.
+                  </p>
+                </div>
+                <div className="border-l-4 border-indigo-600 pl-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Scalability Planning</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    Design and implementation of scalable architectures that can handle growth and increased 
+                    load without performance degradation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Certifications & Compliance</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-8 h-8" />
+                </div>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">WhatsApp Business API</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                  Certified partner with proven expertise in WhatsApp Business API integration and optimization
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8" />
+                </div>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Data Protection</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                  Compliance with GDPR, CCPA, and Indian data protection regulations for secure data handling
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8" />
+                </div>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Quality Management</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                  ISO 9001 compliant quality management system ensuring consistent service delivery standards
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Future Vision Section */}
+      <section className="py-20 bg-white dark:bg-gray-800 transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Future Vision & Roadmap</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+              As technology continues to evolve, we remain committed to staying at the forefront of AI/ML innovation, 
+              expanding our capabilities, and delivering even more powerful solutions that drive business transformation.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Technology Innovation</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                Our research and development team is continuously exploring emerging technologies and methodologies 
+                in artificial intelligence and machine learning. We invest significant resources in staying ahead 
+                of industry trends and developing cutting-edge solutions that provide competitive advantages.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                We are actively working on advanced AI capabilities including generative AI, edge computing 
+                solutions, and autonomous systems. Our goal is to leverage these technologies to create more 
+                intelligent, efficient, and user-friendly solutions that address complex business challenges.
+              </p>
+              <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-6 rounded-lg">
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Innovation Focus Areas:</h4>
+                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <span><strong>Generative AI:</strong> Developing creative AI solutions for content generation and design</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-pink-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <span><strong>Edge Computing:</strong> Implementing AI solutions that run efficiently on edge devices</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <span><strong>Autonomous Systems:</strong> Building intelligent systems that operate independently</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <span><strong>Quantum Computing:</strong> Exploring quantum algorithms for complex problem solving</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Market Expansion</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                We are strategically expanding our market presence to serve a broader range of industries and 
+                geographies. Our goal is to become a globally recognized leader in AI/ML development while 
+                maintaining our focus on delivering exceptional value to our clients.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                Our expansion strategy includes developing specialized solutions for emerging markets, 
+                establishing partnerships with technology leaders, and creating educational programs to 
+                help businesses understand and leverage AI technology effectively.
+              </p>
+              <div className="grid grid-cols-1 gap-4">
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Geographic Expansion</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    Expanding our presence across India and internationally to serve global clients with 
+                    localized solutions and support.
+                  </p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Industry Diversification</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    Developing specialized AI solutions for emerging industries including renewable energy, 
+                    smart cities, and sustainable agriculture.
+                  </p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Partnership Development</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    Building strategic partnerships with technology providers, academic institutions, and 
+                    industry leaders to enhance our capabilities and reach.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'WhatsApp API Tripled Restaurant Orders',
-  description: 'Delhi restaurant chain uses AI-powered WhatsApp automation to triple orders & reduce errors by 45%. Complete implementation details.',
+  description: 'Delhi restaurant chain uses AI-powered WhatsApp automation to triple orders & reduce errors by 45%. Complete case study & implementation details.',
   keywords: [
     'WhatsApp Business API restaurant', 'food delivery automation', 'restaurant ordering system',
     'WhatsApp API Delhi', 'AI restaurant solutions', 'food business automation', 

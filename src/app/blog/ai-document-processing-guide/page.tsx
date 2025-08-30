@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'AI Document Processing Guide for Indian Businesses',
-  description: 'Step-by-step implementation guide for automated document processing using Python, spaCy, and NLP. Achieve 95% accuracy in data extraction.',
+  description: 'Complete implementation guide for automated document processing using Python, spaCy, and NLP. Achieve 95% accuracy in data extraction for business.',
   keywords: [
     'AI document processing', 'automated data extraction', 'Python NLP', 'spaCy document processing',
     'Indian business automation', 'OCR with AI', 'document automation', 'data extraction accuracy',
