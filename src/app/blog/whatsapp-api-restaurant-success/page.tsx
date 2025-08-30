@@ -3,7 +3,7 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'WhatsApp API Increased Restaurant Orders by 300% - Case Study',
+  title: 'WhatsApp API Tripled Restaurant Orders',
   description: 'Delhi restaurant chain uses AI-powered WhatsApp automation to triple orders & reduce errors by 45%. Complete implementation details.',
   keywords: [
     'WhatsApp Business API restaurant', 'food delivery automation', 'restaurant ordering system',

@@ -3,7 +3,7 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Document Processing Guide for Indian Businesses',
+  title: 'AI Document Processing Guide for India',
   description: 'Step-by-step guide for automated document processing using Python & NLP. Achieve 95% accuracy in data extraction.',
   keywords: [
     'AI document processing India', 'automated data extraction', 'document automation',

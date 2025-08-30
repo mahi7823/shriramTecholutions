@@ -3,7 +3,7 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Cost-Effective AI Solutions for Small Businesses - 2024 Guide',
+  title: 'Cost-Effective AI Solutions for SMEs',
   description: 'Practical AI strategies for SMEs with limited budgets. ROI analysis, implementation roadmap & affordable tech stack for Indian businesses.',
   keywords: [
     'cost effective AI India', 'small business AI solutions', 'affordable AI implementation',
