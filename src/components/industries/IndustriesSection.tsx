@@ -1,7 +1,7 @@
-import { ShoppingCart, Utensils, Heart, Scale, Home, Factory, Briefcase, GraduationCap } from 'lucide-react';
+import { ShoppingCart, Utensils, Heart, Scale, Home, Factory } from 'lucide-react';
 
 interface Industry {
-  icon: any;
+  icon: React.ElementType;
   name: string;
   description: string;
   solutions: string[];
@@ -220,7 +220,7 @@ export default function IndustriesSection() {
 
         {/* Additional Industries */}
         <div className="mt-12 grid md:grid-cols-2 gap-6">
-          {industries.slice(4).map((industry, index) => {
+          {industries.slice(4).map((industry) => {
             const Icon = industry.icon;
             return (
               <div 

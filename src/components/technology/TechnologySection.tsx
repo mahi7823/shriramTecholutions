@@ -1,7 +1,7 @@
 import { Code, Database, Cloud, Smartphone, Brain, Eye, BarChart3, Shield } from 'lucide-react';
 
 interface Technology {
-  icon: any;
+  icon: React.ElementType;
   category: string;
   description: string;
   technologies: {
