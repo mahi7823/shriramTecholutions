@@ -3,8 +3,8 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'FastAPI vs Django for AI Development: Complete Comparison 2024',
-  description: 'Comprehensive analysis of FastAPI and Django for AI/ML projects. Performance benchmarks, scalability, and real-world implementation examples for Indian developers.',
+  title: 'FastAPI vs Django for AI Development - Complete Comparison',
+  description: 'Comprehensive FastAPI & Django analysis for AI/ML projects. Performance benchmarks & real-world examples for Indian developers.',
   keywords: [
     'FastAPI vs Django AI', 'Python web framework comparison', 'AI development framework',
     'machine learning API development', 'FastAPI performance benchmarks', 'Django AI projects',

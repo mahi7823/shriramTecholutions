@@ -3,8 +3,8 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Complete Guide to AI Document Processing for Indian Businesses - Shriram Tech Solutions',
-  description: 'Step-by-step implementation guide for automated document processing using Python, spaCy, and NLP. Achieve 95% accuracy in data extraction for Indian businesses.',
+  title: 'AI Document Processing Guide for Indian Businesses',
+  description: 'Step-by-step guide for automated document processing using Python & NLP. Achieve 95% accuracy in data extraction.',
   keywords: [
     'AI document processing India', 'automated data extraction', 'document automation',
     'Python NLP tutorial', 'spaCy implementation', 'OCR India', 'business automation guide',
@@ -323,7 +323,7 @@ export default function AIDocumentProcessingGuide() {
 
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-8 mt-12">
             <h2 className="text-2xl font-bold text-purple-900 mb-4">
-              Ready to Implement AI Document Processing?
+              Start Your AI Document Processing Journey
             </h2>
             <p className="text-purple-800 mb-6">
               Transform your document processing with our proven AI solutions. 

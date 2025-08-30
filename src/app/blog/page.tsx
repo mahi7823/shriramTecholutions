@@ -4,8 +4,8 @@ import Link from 'next/link'
 import blogs from '@/data/blogs.json'
 
 export const metadata: Metadata = {
-  title: 'AI/ML Development Blog - Latest Insights & Case Studies',
-  description: 'Expert insights on AI development, WhatsApp Business API, machine learning solutions, and automation strategies for Indian businesses. Read our latest case studies and technical articles.',
+  title: 'AI/ML Blog - Expert Insights & Case Studies',
+  description: 'Expert insights on AI development, WhatsApp Business API & automation for Indian businesses. Latest case studies & tutorials.',
   keywords: [
     'AI development blog', 'ML insights India', 'WhatsApp Business API guide', 
     'automation case studies', 'AI implementation strategies', 'machine learning tutorials',
@@ -74,7 +74,7 @@ export default function BlogPage() {
         <div className="text-center mt-16">
           <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Need Custom AI Solutions for Your Business?
+              Looking for AI Solutions Tailored to Your Business?
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
               Get expert consultation on AI implementation, WhatsApp Business API integration, 

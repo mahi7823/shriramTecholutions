@@ -3,8 +3,8 @@ import Layout from '@/components/layout/Layout'
 import FAQSection from '@/components/faq/FAQSection'
 
 export const metadata: Metadata = {
-  title: 'FAQ - Frequently Asked Questions | Shriram Tech Solutions',
-  description: 'Get answers to common questions about AI/ML development, WhatsApp Business API integration, pricing, and our services. Expert guidance for your business automation needs.',
+  title: 'FAQ - AI/ML Development & WhatsApp API Questions',
+  description: 'Answers to common questions about AI/ML development, WhatsApp Business API integration, pricing & services. Expert guidance.',
 }
 
 export default function FAQPage() {

@@ -4,8 +4,8 @@ import { Award, Code, Users, Zap, CheckCircle, MessageCircle, Phone, Mail } from
 import { contactInfo, generateWhatsAppLink, generateEmailLink, generatePhoneLink } from '@/config/contactInfo'
 
 export const metadata: Metadata = {
-  title: 'About Us - Professional AI/ML Development Services',
-  description: 'Learn about Shriram Tech Solutions - 5+ years of expertise in AI/ML development, WhatsApp Business API, and cutting-edge technology solutions.',
+  title: 'About - Professional AI/ML Development Services',
+  description: 'Shriram Tech Solutions - 5+ years AI/ML expertise, WhatsApp Business API specialist. 98% success rate, 50+ projects delivered.',
 }
 
 export default function AboutPage() {

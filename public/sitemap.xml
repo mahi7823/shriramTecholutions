@@ -1,58 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
   <!-- Homepage -->
   <url>
     <loc>https://shritech.digital</loc>
-    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital" />
   </url>
   
   <!-- About Us Page -->
   <url>
     <loc>https://shritech.digital/about</loc>
-    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/about" />
   </url>
   
-  <!-- Privacy Policy Page -->
+  <!-- Blog Main Page -->
   <url>
-    <loc>https://shritech.digital/privacy</loc>
-    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.60</priority>
+    <loc>https://shritech.digital/blog</loc>
+    <lastmod>2025-08-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/blog" />
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://shritech.digital/blog/ai-document-processing-guide</loc>
+    <lastmod>2025-01-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/blog/ai-document-processing-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/blog/ai-document-processing-guide" />
+  </url>
+  
+  <url>
+    <loc>https://shritech.digital/blog/whatsapp-api-restaurant-success</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/blog/whatsapp-api-restaurant-success" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/blog/whatsapp-api-restaurant-success" />
+  </url>
+  
+  <url>
+    <loc>https://shritech.digital/blog/cost-effective-ai-small-business</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/blog/cost-effective-ai-small-business" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/blog/cost-effective-ai-small-business" />
+  </url>
+  
+  <url>
+    <loc>https://shritech.digital/blog/fastapi-vs-django-ai</loc>
+    <lastmod>2025-01-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/blog/fastapi-vs-django-ai" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/blog/fastapi-vs-django-ai" />
   </url>
   
   <!-- FAQ Page -->
   <url>
     <loc>https://shritech.digital/faq</loc>
-    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/faq" />
+  </url>
+  
+  <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://shritech.digital/privacy</loc>
+    <lastmod>2025-08-30T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/privacy" />
   </url>
   
   <!-- Services Section (anchor links) -->
   <url>
     <loc>https://shritech.digital/#services</loc>
-    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/#services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/#services" />
   </url>
   
   <!-- Case Studies Section -->
   <url>
     <loc>https://shritech.digital/#case-studies</loc>
-    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/#case-studies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/#case-studies" />
   </url>
   
   <!-- Contact Section -->
   <url>
     <loc>https://shritech.digital/#contact</loc>
-    <lastmod>2025-01-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shritech.digital/#contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shritech.digital/#contact" />
   </url>
+  
 </urlset>

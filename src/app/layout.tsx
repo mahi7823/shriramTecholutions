@@ -6,19 +6,20 @@ import SchemaMarkup from '@/components/common/SchemaMarkup'
 import FAQSchema from '@/components/common/FAQSchema'
 import LocalBusinessSchema from '@/components/common/LocalBusinessSchema'
 import EnhancedSEO from '@/components/common/EnhancedSEO'
+import TwitterCardOptimizer from '@/components/common/TwitterCardOptimizer'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// SEO metadata
+// SEO metadata - Optimized for better search engine performance
 export const metadata: Metadata = {
   metadataBase: new URL("https://shritech.digital"),
   title: {
-    default: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert',
-    template: '%s | Shriram Tech Solutions'
+    default: 'AI/ML Developer India - Shriram Tech Solutions',
+    template: '%s | Shriram Tech'
   },
   description:
-    'AI/ML Developer in India with 5+ years of experience. Expert in WhatsApp Business API, FastAPI, Next.js & Python. ',
+    'Expert AI/ML Developer in India. 5+ years experience in WhatsApp Business API, FastAPI, Python & Next.js. Transform your business with AI.',
   keywords: [
     // Primary keywords
     'AI developer India', 'ML developer India', 'WhatsApp Business API expert India', 'AI consultant India',
@@ -52,9 +53,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://shritech.digital',
     siteName: 'Shriram Tech Solutions',
-    title: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert',
+    title: 'AI/ML Developer India - Shriram Tech Solutions',
     description:
-      'AI/ML Developer in India with 5+ years of experience. WhatsApp Business API, FastAPI, Next.js, Python solutions.',
+      'Expert AI/ML Developer in India. 5+ years experience in WhatsApp Business API, FastAPI, Python & Next.js. Transform your business with AI.',
     images: [
       {
         url: '/og-image.svg',
@@ -67,13 +68,22 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Shriram Tech Solutions - AI/ML Developer & WhatsApp Business API Expert',
+    title: 'AI/ML Developer India - Shriram Tech Solutions',
     description:
-      'AI/ML Developer in India with 5+ years of experience. WhatsApp Business API, FastAPI, Next.js, Python solutions.',
+      'Expert AI/ML Developer in India. 5+ years experience in WhatsApp Business API, FastAPI, Python & Next.js.',
     images: ['/og-image.svg'],
+    site: '@ShriramTechSol',
+    creator: '@ShriramTechSol',
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || 'ZayAh0RA-19RpBttk3oDglvibUIlI3sdqdp-oBOzLwQ',
+  },
+  alternates: {
+    canonical: 'https://shritech.digital',
+    languages: {
+      'en': 'https://shritech.digital',
+      'x-default': 'https://shritech.digital',
+    },
   },
 }
 
@@ -87,7 +97,11 @@ export default function RootLayout({
       <head>
         {/* ✅ Canonical URL always points to main domain */}
         <link rel="canonical" href="https://shritech.digital" />
+        {/* ✅ Hreflang for international SEO */}
+        <link rel="alternate" hrefLang="en" href="https://shritech.digital" />
+        <link rel="alternate" hrefLang="x-default" href="https://shritech.digital" />
         <EnhancedSEO />
+        <TwitterCardOptimizer />
         <link rel="icon" type="image/svg+xml" href="/logo-mark.svg" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

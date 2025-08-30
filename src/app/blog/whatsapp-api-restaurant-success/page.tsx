@@ -3,8 +3,8 @@ import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How WhatsApp Business API Increased Restaurant Orders by 300% - Case Study',
-  description: 'Complete case study: Delhi restaurant chain uses AI-powered WhatsApp automation to triple orders, reduce errors by 45%, and improve customer satisfaction. Implementation details included.',
+  title: 'WhatsApp API Increased Restaurant Orders by 300% - Case Study',
+  description: 'Delhi restaurant chain uses AI-powered WhatsApp automation to triple orders & reduce errors by 45%. Complete implementation details.',
   keywords: [
     'WhatsApp Business API restaurant', 'food delivery automation', 'restaurant ordering system',
     'WhatsApp API Delhi', 'AI restaurant solutions', 'food business automation', 
@@ -209,7 +209,7 @@ export default function WhatsAppRestaurantCaseStudy() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-8 mt-12">
             <h2 className="text-2xl font-bold text-blue-900 mb-4">
-              Ready to Transform Your Restaurant Business?
+              Transform Your Restaurant with WhatsApp API
             </h2>
             <p className="text-blue-800 mb-6">
               Get the same results for your restaurant with our proven WhatsApp Business API solution. 
