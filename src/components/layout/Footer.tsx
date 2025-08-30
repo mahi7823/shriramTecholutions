@@ -144,7 +144,7 @@ export default function Footer() {
 
         {/* SEO Content for better text/code ratio */}
         <div className="mb-12">
-          <SEOContent variant="footer" className="" />
+          <SEOContent variant="footer" className="" pageContext="Footer" />
         </div>
 
         {/* Bottom Section */}

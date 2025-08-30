@@ -3,9 +3,10 @@ import React from 'react';
 interface SEOContentProps {
   className?: string;
   variant?: 'hero' | 'services' | 'about' | 'contact' | 'footer';
+  pageContext?: string;
 }
 
-export default function SEOContent({ className = '', variant = 'hero' }: SEOContentProps) {
+export default function SEOContent({ className = '', variant = 'hero', pageContext = '' }: SEOContentProps) {
   const content = {
     hero: {
       title: "Professional AI/ML Development Services in India",
@@ -41,7 +42,7 @@ export default function SEOContent({ className = '', variant = 'hero' }: SEOCont
       process analysis, AI opportunity identification, ROI projections, and implementation timeline planning.`
     },
     footer: {
-      title: "Shriram Tech Solutions - Premier AI/ML Development Services",
+      title: pageContext ? `${pageContext} - AI/ML Development Services` : "Shriram Tech Solutions - Premier AI/ML Development Services",
       content: `Shriram Tech Solutions is a premier AI/ML development company based in India, providing comprehensive 
       artificial intelligence solutions to businesses worldwide. We specialize in WhatsApp Business API integration, 
       intelligent chatbot development, document processing automation, computer vision applications, predictive analytics, 
